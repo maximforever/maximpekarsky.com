@@ -1,5 +1,9 @@
 import styled from "styled-components/macro";
 
+const StyledHeader = styled.header`
+  padding-bottom: 3rem;
+`;
+
 const Heading = styled.h1<{ open: boolean }>`
   font-family: ${({ theme }) => theme.fonts.serif};
   font-size: ${(props) => (props.open ? "2.5rem" : "3rem")};
@@ -61,10 +65,10 @@ const Finger = styled.span<{ open: boolean }>`
 
 export const Header = () => {
   return (
-    <header>
+    <StyledHeader>
       <Heading open={true}>Max Pekarsky</Heading>
       <Subheading open={true}>Full-stack product engineer</Subheading>
       <Finger open={true} />
-    </header>
+    </StyledHeader>
   );
 };

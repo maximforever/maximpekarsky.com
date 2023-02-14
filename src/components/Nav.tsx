@@ -1,3 +1,4 @@
+import { PageType } from "../../types";
 import styled from "styled-components/macro";
 
 const DesktopNav = styled.div`
@@ -59,30 +60,70 @@ const MobileNavItem = styled(NavItem)`
   }
 `;
 
-export const Nav = () => {
+interface NavProps {
+  page: PageType;
+  handleNavClick: (page: PageType) => void;
+}
+
+export const Nav: React.FunctionComponent<NavProps> = ({
+  page,
+  handleNavClick,
+}) => {
   return (
     <nav>
       <DesktopNav>
-        <NavItem active>About</NavItem>
-        <NavItem>Projects</NavItem>
-        <NavItem>Writing</NavItem>
-        <NavItem>Work</NavItem>
+        <NavItem
+          active={page === "about"}
+          onClick={() => handleNavClick("about")}
+        >
+          About
+        </NavItem>
+        <NavItem
+          active={page === "projects"}
+          onClick={() => handleNavClick("projects")}
+        >
+          Projects
+        </NavItem>
+        <NavItem
+          active={page === "writing"}
+          onClick={() => handleNavClick("writing")}
+        >
+          Writing
+        </NavItem>
+        <NavItem
+          active={page === "work"}
+          onClick={() => handleNavClick("work")}
+        >
+          Work
+        </NavItem>
       </DesktopNav>
 
       <MobileNav>
-        <MobileNavItem active>
+        <MobileNavItem
+          active={page === "about"}
+          onClick={() => handleNavClick("about")}
+        >
           <span className="lnr lnr-user"></span>
           <label>About</label>
         </MobileNavItem>
-        <MobileNavItem>
+        <MobileNavItem
+          active={page === "projects"}
+          onClick={() => handleNavClick("projects")}
+        >
           <span className="lnr lnr-laptop"></span>
           <label>Projects</label>
         </MobileNavItem>
-        <MobileNavItem>
+        <MobileNavItem
+          active={page === "writing"}
+          onClick={() => handleNavClick("writing")}
+        >
           <span className="lnr lnr-pencil"></span>
           <label>Writing</label>
         </MobileNavItem>
-        <MobileNavItem>
+        <MobileNavItem
+          active={page === "work"}
+          onClick={() => handleNavClick("work")}
+        >
           <span className="lnr lnr-mustache"></span>
           <label>Work</label>
         </MobileNavItem>

@@ -11,10 +11,15 @@ const GlobalStylesheet = createGlobalStyle`
     background: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.black};
   }
+  
+  p {
+    line-height: 1.6;
+  }
 
   a, a:visited, a:active {
     color: ${({ theme }) => theme.colors.salmon};
     text-decoration: none;
+    font-weight: 600;
   }
 
   strong {
