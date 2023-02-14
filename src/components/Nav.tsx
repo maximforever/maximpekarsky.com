@@ -1,7 +1,7 @@
 import { PageType } from "../../types";
 import styled from "styled-components/macro";
 
-const DesktopNav = styled.div`
+const DesktopNav = styled.nav`
   display: none;
   padding: 1rem 0;
 
@@ -10,11 +10,19 @@ const DesktopNav = styled.div`
   }
 `;
 
-const MobileNav = styled.div`
+const MobileNav = styled.nav`
   display: flex;
   padding: 1rem 0;
+  margin: 0 auto;
+  background: rgba(0,0,0, 0.03);
+
   position: fixed;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  justify-content: space-evenly;
+  backdrop-filter: blur(7.4px);
 
   &:first-child {
     border: none; !important;
@@ -26,6 +34,7 @@ const MobileNav = styled.div`
 `;
 
 const NavItem = styled.div<{ active?: boolean }>`
+  font-weight: 600;
   margin-right: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: ${(props) =>
@@ -41,14 +50,12 @@ const MobileNavItem = styled(NavItem)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: none;
   padding: 0.5rem;
   line-height: 2.3;
-  border-radius: 0.3rem;
 
-  background: ${(props) => (props.active ? "#ffbcb4" : "inherit")};
-
-  border-left: 2px solid ${({ theme }) => theme.colors.black};
+  .lnr {
+    font-size: 1.5rem;
+  }
 
   &:hover {
     cursor: pointer;
@@ -70,7 +77,7 @@ export const Nav: React.FunctionComponent<NavProps> = ({
   handleNavClick,
 }) => {
   return (
-    <nav>
+    <>
       <DesktopNav>
         <NavItem
           active={page === "about"}
@@ -128,6 +135,6 @@ export const Nav: React.FunctionComponent<NavProps> = ({
           <label>Work</label>
         </MobileNavItem>
       </MobileNav>
-    </nav>
+    </>
   );
 };
