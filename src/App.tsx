@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GlobalStylesheet from "./stylesheets/GlobalStyles";
+import { Header } from "./components/Header";
+import { Nav } from "./components/Nav";
+import { ThemeProvider } from "styled-components";
+import styled from "styled-components/macro";
+import { theme } from "./stylesheets/theme";
+
+const Main = styled.main`
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 1rem;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStylesheet theme={theme} />
+      <Main className="App">
+        <Header />
+        <Nav />
+      </Main>
+    </ThemeProvider>
   );
 }
 
