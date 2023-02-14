@@ -1,3 +1,9 @@
+import "@fontsource/vollkorn/400.css";
+import "@fontsource/montserrat/300.css";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/source-code-pro/500.css";
+
 import About from "./components/About";
 import GlobalStylesheet from "./stylesheets/GlobalStyles";
 import { Header } from "./components/Header";
