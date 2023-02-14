@@ -1,21 +1,25 @@
 [
   {
-    "title": "StackOverflow Blog: Does your web app need a front-end framework?",
+    "title": "Does your web app need a front-end framework?",
+    "subtitle": "StackOverflow Blog",
     "link": "https://stackoverflow.blog/2020/02/03/is-it-time-for-a-front-end-framework/",
     "description": "An introduction to what front-end frameworks do and when they're useful."
   },
   {
-    "title": "StackOverflow Blog: Coding 102 - Writing code other people can read",
+    "title": "Coding 102: Writing code other people can read",
+    "subtitle": "StackOverflow Blog",
     "link": "https://stackoverflow.blog/2023/02/13/coding-102-writing-code-other-people-can-read/",
     "description": "You can hack together syntax. Now it's time to write code your coworkers can read! An introduction to writing clean code for self-taught developers."
   },
   {
-    "title": "StackOverflow Blog: WebSockets for fun and profit",
+    "title": "WebSockets for fun and profit",
+    "subtitle": "StackOverflow Blog",
     "link": "https://stackoverflow.blog/2019/12/18/websockets-for-fun-and-profit/",
     "description": "An approachable technical exploration of WebSocket protocol and its applications."
   },
   {
-    "title": "Bonusly Blog: How to Connect with Your Remote Team and Build Culture",
+    "title": "How to Connect with Your Remote Team and Build Culture",
+    "subtitle": "Bonusly Blog",
     "link": "https://blog.bonus.ly/engaging-remote-employees",
     "description": "Written early in the pandemic, this was my recap of cultural practices that helped keep the Bonusly team working."
   }

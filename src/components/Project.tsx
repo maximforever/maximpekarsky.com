@@ -11,6 +11,7 @@ const Title = styled.h2`
 
 const Subtitle = styled.h3`
   margin: 0;
+  color: ${({ theme }) => theme.colors.lightGray};
 `;
 
 const Description = styled.p``;
@@ -20,7 +21,9 @@ const Project: React.FunctionComponent<{ project: ProjectType }> = ({
 }) => {
   return (
     <StyledProject>
-      <Title>{project.title}</Title>
+      <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <Title>{project.title}</Title>
+      </a>
       {project.subtitle && <Subtitle>{project.subtitle}</Subtitle>}
       <Description>{project.description}</Description>
     </StyledProject>
