@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Hackterms",
+    "subtitle": "Urban Dictionary for programming terms",
+    "link": "https://www.hackterms.com",
+    "description": "Tired of reading arguments and tutorials, I built Hackterms for quick programming research and grew it and grew it to 1300 definitions from over a thousand contributors.",
+    "imageTitle": "hackterms",
+    "stack": [
+      "Node.js",
+      "Express",
+      "jQuery",
+      "Handlebars.js",
+      "MongoDB",
+      "SASS",
+      "OAuth"
+    ]
+  },
+  {
+    "title": "GemFM",
+    "subtitle": "Find your next favorite podcast episode",
+    "link": "https://www.gem.fm",
+    "description": "GemFM is a recommendation engine for great podcast episodes powered by the Spotify and iTunes APIs. Users can rate, comment on, and tag episodes.",
+    "imageTitle": "gemfm",
+    "stack": [
+      "Rails",
+      "React.js",
+      "TypeScript",
+      "Redux",
+      "styled-components",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "title": "TinyLogger",
+    "subtitle": "Focus on writing",
+    "link": "https://www.tinylogger.com",
+    "description": "TinyLogger is a minimal, distraction-free blogging platform. The minimal interface auto-saves, cleverly hides distractions, and focuses the user on writing.",
+    "imageTitle": "tinylogger",
+    "stack": ["Node.js", "Express", "Vue.js", "MongoDB"]
+  },
+  {
+    "title": "Trakr",
+    "subtitle": "Keep tabs on your daily spending",
+    "link": "https://www.mytrakr.app",
+    "description": "Named after a heroic 9/11 dog, Trakr is a personal budgeting app. Users can enter and tag expenses, review a monthly dashboard, and see charts and graphs of their spending analytics.",
+    "imageTitle": "trakr",
+    "stack": ["Rails", "React.js", "OAuth", "Victory Charts", "PostgreSQL"]
+  },
+  {
+    "title": "MaximPekarsky.com",
+    "subtitle": "Check out this Max guy",
+    "link": "/",
+    "description": "This portfolio is built with server-side rendered React.js, TypeScript, and styled-components",
+    "imageTitle": "maximpekarsky",
+    "stack": ["React.js", "TypeScript", "styled-components"]
+  }
+]

@@ -1,5 +1,5 @@
 import { faBuilding, faCircleUser } from "@fortawesome/free-regular-svg-icons";
-import { faLaptop, faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faFeatherPointed, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageType } from "../../types";
 import styled from "styled-components/macro";
@@ -40,7 +40,7 @@ const MobileNav = styled.nav`
 
 const NavItem = styled.div<{ active?: boolean }>`
   font-weight: 600;
-  margin-right: 1rem;
+  margin-right: 4rem;
   padding-bottom: 0.5rem;
   color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
   border-bottom: ${(props) =>
@@ -134,7 +134,7 @@ export const Nav: React.FunctionComponent<NavProps> = ({
           active={page === "writing"}
           onClick={() => handleNavClick("writing")}
         >
-          <FontAwesomeIcon icon={faPencil} />
+          <FontAwesomeIcon icon={faFeatherPointed} />
           <label>Writing</label>
         </MobileNavItem>
         <MobileNavItem

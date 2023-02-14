@@ -1,9 +1,9 @@
 import { AboutMeText } from "./StaticTextBlocks";
-import styled from "styled-components/macro";
+import NarrowContainer from "./NarrowContainer";
 import SocialMediaLinks from "./SocialMediaLinks";
+import styled from "styled-components/macro";
 
-const StyledAbout = styled.div`
-  max-width: 600px;
+const StyledAbout = styled(NarrowContainer)`
   line-height: 1.7;
   padding-bottom: 10rem;
 

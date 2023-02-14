@@ -3,11 +3,10 @@ import GlobalStylesheet from "./stylesheets/GlobalStyles";
 import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
 import { PageType } from "../types";
-import Projects from "./components/Projects";
+import ProjectsPage from "./components/ProjectsPage";
 import { ThemeProvider } from "styled-components";
 import Work from "./components/Work";
-import Writing from "./components/Writing";
-import styled from "styled-components/macro";
+import WritingPage from "./components/WritingPage";
 import { theme } from "./stylesheets/theme";
 
 import { useState } from "react";
@@ -28,10 +27,10 @@ function App() {
         return <Work />;
         break;
       case "writing":
-        return <Writing />;
+        return <WritingPage />;
         break;
       case "projects":
-        return <Projects />;
+        return <ProjectsPage />;
         break;
       default:
         return <p>404: that's not a real page!</p>;
