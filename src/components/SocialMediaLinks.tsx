@@ -61,7 +61,7 @@ const SocialMediaLinks = () => (
       <span>Github</span>
     </a>
     <a
-      href="https://tinylogger.com/max"
+      href="https://www.tinylogger.com/max"
       target="_blank"
       rel="noopener noreferrer"
     >
