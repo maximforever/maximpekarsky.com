@@ -1,6 +1,7 @@
+import { faFilePdf, faKeyboard } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf, faKeyboard } from "@fortawesome/free-regular-svg-icons";
+import Resume from "../assets/Max_Pekarsky_Resume.pdf";
 import styled from "styled-components/macro";
 
 const SocialMediaIcons = styled.div`
@@ -68,7 +69,7 @@ const SocialMediaLinks = () => (
       <FontAwesomeIcon icon={faKeyboard} />
       <span>Blog</span>
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href={Resume} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faFilePdf} />
       <span>Resume</span>
     </a>
