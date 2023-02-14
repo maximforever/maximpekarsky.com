@@ -1,3 +1,6 @@
+import { faBuilding, faCircleUser } from "@fortawesome/free-regular-svg-icons";
+import { faLaptop, faPencil } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageType } from "../../types";
 import styled from "styled-components/macro";
 
@@ -57,8 +60,9 @@ const MobileNavItem = styled(NavItem)`
   margin: 0;
   border-right: 1px solid gray;
   width: 100%;
+  padding: 0.5rem 0;
 
-  .lnr {
+  svg {
     font-size: 1.5rem;
     padding-top: 0.5rem;
   }
@@ -116,28 +120,28 @@ export const Nav: React.FunctionComponent<NavProps> = ({
           active={page === "about"}
           onClick={() => handleNavClick("about")}
         >
-          <span className="lnr lnr-user"></span>
+          <FontAwesomeIcon icon={faCircleUser} />
           <label>About</label>
         </MobileNavItem>
         <MobileNavItem
           active={page === "projects"}
           onClick={() => handleNavClick("projects")}
         >
-          <span className="lnr lnr-laptop"></span>
+          <FontAwesomeIcon icon={faLaptop} />
           <label>Projects</label>
         </MobileNavItem>
         <MobileNavItem
           active={page === "writing"}
           onClick={() => handleNavClick("writing")}
         >
-          <span className="lnr lnr-pencil"></span>
+          <FontAwesomeIcon icon={faPencil} />
           <label>Writing</label>
         </MobileNavItem>
         <MobileNavItem
           active={page === "work"}
           onClick={() => handleNavClick("work")}
         >
-          <span className="lnr lnr-mustache"></span>
+          <FontAwesomeIcon icon={faBuilding} />
           <label>Work</label>
         </MobileNavItem>
       </MobileNav>
