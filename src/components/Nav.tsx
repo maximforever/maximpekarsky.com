@@ -1,7 +1,7 @@
 import { faBuilding, faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { faFeatherPointed, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { PageType } from "../../types";
+import { PageType } from "../types";
 import styled from "styled-components/macro";
 
 const DesktopNav = styled.nav`

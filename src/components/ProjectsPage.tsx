@@ -1,6 +1,6 @@
 import NarrowContainer from "./NarrowContainer";
 import Project from "./Project";
-import { ProjectType } from "../../types";
+import { ProjectType } from "../types";
 import projects from "../projects.json";
 
 const ProjectsPage = () => {

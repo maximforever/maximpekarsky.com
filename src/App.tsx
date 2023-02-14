@@ -2,7 +2,7 @@ import About from "./components/About";
 import GlobalStylesheet from "./stylesheets/GlobalStyles";
 import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
-import { PageType } from "../types";
+import { PageType } from "./types";
 import ProjectsPage from "./components/ProjectsPage";
 import { ThemeProvider } from "styled-components";
 import Work from "./components/Work";

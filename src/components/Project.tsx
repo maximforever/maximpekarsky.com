@@ -1,4 +1,4 @@
-import { ProjectType } from "../../types";
+import { ProjectType } from "../types";
 import styled from "styled-components/macro";
 
 const StyledProject = styled.div`
