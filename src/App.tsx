@@ -11,14 +11,13 @@ import styled from "styled-components/macro";
 import { theme } from "./stylesheets/theme";
 
 import { useState } from "react";
-const Main = styled.main`
-  margin: 0 auto;
-  max-width: 1600px;
-  padding: 1rem;
-`;
 
 function App() {
   const [page, setPage] = useState<PageType>("about");
+
+  const handleNavClick = (newPage: PageType) => {
+    setPage(newPage);
+  };
 
   const router = () => {
     switch (page) {
@@ -42,11 +41,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStylesheet theme={theme} />
-      <Main className="App">
+      <main className="App">
         <Header />
-        <Nav page={page} handleNavClick={(newPage) => setPage(newPage)} />
+        <Nav page={page} handleNavClick={handleNavClick} />
         {router()}
-      </Main>
+      </main>
     </ThemeProvider>
   );
 }

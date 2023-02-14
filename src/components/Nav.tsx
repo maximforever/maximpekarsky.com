@@ -12,9 +12,9 @@ const DesktopNav = styled.nav`
 
 const MobileNav = styled.nav`
   display: flex;
-  padding: 1rem 0;
+  padding: 0;
   margin: 0 auto;
-  background: rgba(0,0,0, 0.03);
+  background: rgba(0, 0, 0, 0.03);
 
   position: fixed;
   bottom: 0;
@@ -24,8 +24,10 @@ const MobileNav = styled.nav`
   justify-content: space-evenly;
   backdrop-filter: blur(7.4px);
 
-  &:first-child {
-    border: none; !important;
+  > * {
+    &:last-child {
+      border: none;
+    }
   }
 
   @media only screen and (min-width: 768px) {
@@ -37,8 +39,9 @@ const NavItem = styled.div<{ active?: boolean }>`
   font-weight: 600;
   margin-right: 1rem;
   padding-bottom: 0.5rem;
+  color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
   border-bottom: ${(props) =>
-    props.active ? "3px solid" + props.theme.colors.salmon : "none"};
+    props.active ? `3px solid ${props.theme.colors.salmon}` : "none"};
 
   &:hover {
     cursor: pointer;
@@ -50,11 +53,14 @@ const MobileNavItem = styled(NavItem)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem;
   line-height: 2.3;
+  margin: 0;
+  border-right: 1px solid gray;
+  width: 100%;
 
   .lnr {
     font-size: 1.5rem;
+    padding-top: 0.5rem;
   }
 
   &:hover {

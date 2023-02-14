@@ -2,8 +2,12 @@ export const AboutMeText = () => (
   <>
     <p>
       I&apos;m a product-driven full-stack web developer, writer, and teacher.
-      I am currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> and writing for the <a href="https://stackoverflow.blog/authors/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
-      In the past, I worked on product and engineering teams at <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>, <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, <a href="https://indiegogo.com" target="_blank" rel="nofollow noreferrer">Indiegogo</a>, and the <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office</a>.
+      I am currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/authors/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
+      In the past, I worked on engineering and product teams at 
+      <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>,{" "}
+      <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, the{" "}
+      <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office</a>,{" "}
+      and <a href="https://indiegogo.com" target="_blank" rel="nofollow noreferrer">Indiegogo</a>.
     </p>
     <p>
       In addition to my engineering work, I love being involved with my team&apos;s learning and development, developer experience, and hiring process.
