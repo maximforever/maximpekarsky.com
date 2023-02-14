@@ -5,11 +5,6 @@ import styled from "styled-components/macro";
 
 const StyledAbout = styled(NarrowContainer)`
   line-height: 1.7;
-  padding-bottom: 10rem;
-
-  @media only screen and (min-width: 768px) {
-    padding-bottom: initial;
-  }
 `;
 
 const About = () => {

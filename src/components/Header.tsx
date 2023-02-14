@@ -67,7 +67,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <Heading open={true}>Max Pekarsky</Heading>
-      <Subheading open={true}>Full-stack product engineer</Subheading>
+      <Subheading open={true}>full-stack product engineer</Subheading>
       <Finger open={true} />
     </StyledHeader>
   );

@@ -36,10 +36,10 @@ const GlobalStylesheet = createGlobalStyle`
     box-sizing: border-box;
     font-family: ${({ theme }) => theme.fonts.sansSerif};
     width: 100%;
-    padding: 5vw;
+    padding: 5vw 5vw 10rem 5vw;
 
     @media only screen and (min-width: 768px) {
-      padding: 2rem;
+      padding: 2rem 2rem 10rem 2rem;
       margin: 0;
     }
   }
