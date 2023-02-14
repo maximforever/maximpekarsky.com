@@ -6,7 +6,6 @@ import styled from "styled-components/macro";
 import { theme } from "./stylesheets/theme";
 
 const Main = styled.main`
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 1600px;
   padding: 1rem;

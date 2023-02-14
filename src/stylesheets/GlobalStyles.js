@@ -28,7 +28,6 @@ const GlobalStylesheet = createGlobalStyle`
     box-sizing: border-box;
     font-family: ${({ theme }) => theme.fonts.sansSerif};
 
-
     @media only screen and (max-width: 768px) {
       margin: 0;
     }
