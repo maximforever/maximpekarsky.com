@@ -29,7 +29,7 @@ const MobileNav = styled.nav`
 
   > * {
     &:last-child {
-      border: none;
+      border-right: none;
     }
   }
 
