@@ -1,3 +1,4 @@
+import DarkModeToggle from "./DarkModeToggle";
 import styled from "styled-components/macro";
 
 const StyledHeader = styled.header`
@@ -63,12 +64,16 @@ const Finger = styled.span<{ open: boolean }>`
   }
 `;
 
-export const Header = () => {
+export const Header: React.FC<{
+  darkMode: boolean;
+  toggleDarkMode: (darkMode: boolean) => void;
+}> = ({ darkMode, toggleDarkMode }) => {
   return (
     <StyledHeader>
       <Heading open={true}>Max Pekarsky</Heading>
       <Subheading open={true}>full-stack product engineer</Subheading>
       <Finger open={true} />
+      <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </StyledHeader>
   );
 };

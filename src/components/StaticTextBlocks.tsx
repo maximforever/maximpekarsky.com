@@ -2,7 +2,7 @@ export const AboutMeText = () => (
   <>
     <p>
       I&apos;m a product-driven full-stack web developer, writer, and teacher.
-      I am currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/authors/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
+      I am currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
       In the past, I worked on engineering and product teams at 
       <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>,{" "}
       <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, the{" "}
