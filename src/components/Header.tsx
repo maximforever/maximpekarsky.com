@@ -4,10 +4,19 @@ import styled from "styled-components/macro";
 
 const StyledHeader = styled.header<{ open: boolean }>`
   margin-top: ${(props) => (props.open ? "0vh" : "40vh")};
+  margin-left: ${(props) => (props.open ? "0vw" : "12vw")};
+  text-align: ${(props) => (props.open ? "left" : "center")};
+
   padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
-  transition: margin-top, ${({ theme }) => theme.transitions.long};
+  transition: margin-top, margin-left;
+  transition-duration: ${({ theme }) => theme.transitions.long};
+
+  @media only screen and (min-width: 768px) {
+    margin-top: ${(props) => (props.open ? "0vh" : "40vh")};
+    margin-left: ${(props) => (props.open ? "0vw" : "32vw")};
+  }
 `;
 
 const HeadingWrapper = styled.div`

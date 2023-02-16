@@ -14,7 +14,7 @@ const DesktopNav = styled.nav`
   }
 `;
 
-const MobileNav = styled.nav`
+const MobileNav = styled.nav<{ open: boolean }>`
   display: flex;
   padding: 0;
   margin: 0 auto;
@@ -22,12 +22,18 @@ const MobileNav = styled.nav`
   z-index: 99;
 
   position: fixed;
-  bottom: 0;
+  //bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   justify-content: space-evenly;
   backdrop-filter: blur(7.4px);
+
+  opacity: ${(props) => (props.open ? "1" : "0")};
+  bottom: ${(props) => (props.open ? "0" : "-30vh")};
+
+  transition: opacity, ${({ theme }) => theme.transitions.medium};
+  transition: bottom, ${({ theme }) => theme.transitions.long};
 
   > * {
     &:last-child {
@@ -81,11 +87,16 @@ const MobileNavItem = styled(NavItem)`
 `;
 
 interface NavProps {
+  open: boolean;
   page: PageType;
   handleNavClick: (page: PageType) => void;
 }
 
-const Nav: React.FunctionComponent<NavProps> = ({ page, handleNavClick }) => {
+const Nav: React.FunctionComponent<NavProps> = ({
+  open,
+  page,
+  handleNavClick,
+}) => {
   return (
     <>
       <DesktopNav>
@@ -118,7 +129,7 @@ const Nav: React.FunctionComponent<NavProps> = ({ page, handleNavClick }) => {
         </a>
       </DesktopNav>
 
-      <MobileNav>
+      <MobileNav open={open}>
         <MobileNavItem
           active={page === "about"}
           onClick={() => handleNavClick("about")}

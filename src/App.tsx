@@ -83,7 +83,7 @@ function App() {
           handleHeaderClick={handleHeaderClick}
         />
         <MainContent open={appIsOpen}>
-          <Nav page={page} handleNavClick={handleNavClick} />
+          <Nav open={appIsOpen} page={page} handleNavClick={handleNavClick} />
           {router()}
         </MainContent>
       </main>
