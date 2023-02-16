@@ -77,6 +77,7 @@ function App() {
       <GlobalStylesheet theme={darkMode ? darkModeTheme : lightModeTheme} />
       <main className="App">
         <Header
+          open={appIsOpen}
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
           handleHeaderClick={handleHeaderClick}
