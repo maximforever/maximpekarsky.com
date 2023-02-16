@@ -19,6 +19,7 @@ const MobileNav = styled.nav`
   padding: 0;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.03);
+  z-index: 99;
 
   position: fixed;
   bottom: 0;
