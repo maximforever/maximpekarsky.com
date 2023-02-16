@@ -5,6 +5,7 @@ import "@fontsource/montserrat/600.css";
 import "@fontsource/source-code-pro/500.css";
 
 import { darkModeTheme, lightModeTheme } from "./stylesheets/theme";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import GlobalStylesheet from "./stylesheets/GlobalStyles";
 import { Header } from "./components/Header";
@@ -15,11 +16,32 @@ import { ThemeProvider } from "styled-components";
 import Work from "./components/Work";
 import WritingPage from "./components/WritingPage";
 
-import { useState } from "react";
-
 function App() {
+  const localStorageThemePreference = JSON.parse(
+    localStorage.getItem("MaximPekarskyDarkMode") ?? "false"
+  );
+
   const [page, setPage] = useState<PageType>("about");
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [appLoaded, setAppLoaded] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(
+    localStorageThemePreference
+  );
+
+  const toggleDarkMode = () => {
+    localStorage.setItem("MaximPekarskyDarkMode", `${!darkMode}`);
+    setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    // Although we're loading the light/dark mode preference from localStorage,
+    // the transition still runs, causing a frustration background & text color shift.
+    // To prevent this, we add a preload class, which is styled to "transition: none",
+    // and remove it once after the app loads. `useEffect` runs after everything renders.
+    if (!appLoaded) {
+      document.body.classList.remove("preload");
+      setAppLoaded(true);
+    }
+  });
 
   const handleNavClick = (newPage: PageType) => {
     setPage(newPage);
@@ -48,10 +70,7 @@ function App() {
     <ThemeProvider theme={darkMode ? darkModeTheme : lightModeTheme}>
       <GlobalStylesheet theme={darkMode ? darkModeTheme : lightModeTheme} />
       <main className="App">
-        <Header
-          darkMode={darkMode}
-          toggleDarkMode={(darkMode: boolean) => setDarkMode(darkMode)}
-        />
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Nav page={page} handleNavClick={handleNavClick} />
         {router()}
       </main>

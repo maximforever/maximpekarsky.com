@@ -5,13 +5,17 @@
     <link rel="icon" href="%PUBLIC_URL%/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Max Pekarsky is a full-stack product engineer focused on creating beautiful and intuitive apps with Node, Rails, TypeScript, and React.">
+    <meta
+      name="description"
+      content="Max Pekarsky is a full-stack product engineer focused on creating beautiful and intuitive apps with Node, Rails, TypeScript, and React."
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon.png" />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Max Pekarsky: full-stack product engineer</title>
   </head>
-  <body>
+  <!-- the preload class ensures light mode isn't loaded first (see DarkModeToggle.tsx) -->
+  <body class="preload">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

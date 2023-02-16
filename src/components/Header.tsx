@@ -3,7 +3,12 @@ import styled from "styled-components/macro";
 
 const StyledHeader = styled.header`
   padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
+
+const HeadingWrapper = styled.div``;
 
 const Heading = styled.h1<{ open: boolean }>`
   font-family: ${({ theme }) => theme.fonts.serif};
@@ -66,13 +71,15 @@ const Finger = styled.span<{ open: boolean }>`
 
 export const Header: React.FC<{
   darkMode: boolean;
-  toggleDarkMode: (darkMode: boolean) => void;
+  toggleDarkMode: () => void;
 }> = ({ darkMode, toggleDarkMode }) => {
   return (
     <StyledHeader>
-      <Heading open={true}>Max Pekarsky</Heading>
-      <Subheading open={true}>full-stack product engineer</Subheading>
-      <Finger open={true} />
+      <HeadingWrapper>
+        <Heading open={true}>Max Pekarsky</Heading>
+        <Subheading open={true}>full-stack product engineer</Subheading>
+        <Finger open={true} />
+      </HeadingWrapper>
       <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </StyledHeader>
   );

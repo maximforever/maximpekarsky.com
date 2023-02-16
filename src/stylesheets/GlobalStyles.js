@@ -14,6 +14,10 @@ const GlobalStylesheet = createGlobalStyle`
     transition: background ${({ theme }) => theme.transitions.short};
   }
 
+  .preload {
+    transition: none;
+  }
+
   a, a:visited, a:active {
     color: ${({ theme }) => theme.colors.blue};
     text-decoration: none;
