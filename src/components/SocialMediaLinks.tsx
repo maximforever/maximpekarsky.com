@@ -17,6 +17,7 @@ const SocialMediaIcons = styled.div`
 
     border: 1px solid ${({ theme }) => theme.colors.lightGray};
     border-radius: 0.5rem;
+    user-select: none;
 
     @media only screen and (min-width: 768px) {
       height: 5rem;

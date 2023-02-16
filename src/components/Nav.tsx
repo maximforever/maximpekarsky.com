@@ -45,6 +45,7 @@ const NavItem = styled.div<{ active?: boolean }>`
   color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
   border-bottom: ${(props) =>
     props.active ? `3px solid ${props.theme.colors.salmon}` : "none"};
+  user-select: none;
 
   &:hover {
     cursor: pointer;
