@@ -11,6 +11,7 @@ import tinyloggerStatic from "../assets/project_images/tinylogger.png";
 import trakr from "../assets/project_images/trakr.gif";
 import trakrStatic from "../assets/project_images/trakr.png";
 
+// this allows us to get the image path dynamically by passing in the `imageTitle` property stored in the json
 const gifPaths: { [key: string]: string } = {
   hackterms: hackterms,
   gemfm: gemfm,
@@ -29,10 +30,6 @@ const imagePaths: { [key: string]: string } = {
 
 const StyledProject = styled.div`
   padding-bottom: 9rem;
-
-  @media only screen and (min-width: 768px) {
-    padding-bottom: 7rem;
-  }
 `;
 
 const StyledGif = styled.img<{ gifPath: string }>`
@@ -44,7 +41,6 @@ const StyledGif = styled.img<{ gifPath: string }>`
   width: 90vw;
   box-sizing: border-box;
 
-  // this is not a pretty way to get the image path, but it does work dynamically...
   background-color: black;
   background: ${(props) => `url("${props.gifPath}") no-repeat center center`};
   background-size: cover;
@@ -92,7 +88,7 @@ const ImageOverlay = styled.div`
     height: 250px;
     width: 400px;
     background: black;
-    opacity: 0.5;
+    opacity: 0.2;
     transition-property: opacity;
     transition-duration: ${({ theme }) => theme.transitions.fast};
   }
@@ -108,6 +104,8 @@ const ImageWrapper = styled.div`
     &:hover {
       cursor: pointer;
 
+      // on Desktop, the gif has two overlays: a static image, and a black opaque div.
+      // This makes both invisible (the transition lives on ImageOverlay)
       ${StaticImage} {
         opacity: 0;
       }
