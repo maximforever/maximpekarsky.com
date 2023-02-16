@@ -1,5 +1,7 @@
 import DarkModeToggle from "./DarkModeToggle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageType } from "../types";
+import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components/macro";
 
 const StyledHeader = styled.header<{ open: boolean }>`
@@ -7,13 +9,15 @@ const StyledHeader = styled.header<{ open: boolean }>`
   margin-left: ${(props) => (props.open ? "0vw" : "12vw")};
   text-align: ${(props) => (props.open ? "left" : "center")};
 
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   display: flex;
+  user-select: none;
   justify-content: space-between;
   transition: margin-top, margin-left;
   transition-duration: ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
+    padding-bottom: 3rem;
     margin-top: ${(props) => (props.open ? "0vh" : "40vh")};
     margin-left: ${(props) => (props.open ? "0vw" : "32vw")};
   }
@@ -51,21 +55,25 @@ const Subheading = styled.h2<{ open: boolean }>`
   }
 `;
 
-const Finger = styled.span<{ open: boolean }>`
+const StyledFinger = styled.div<{ open: boolean }>`
   font-size: 1.6rem;
   color: ${({ theme }) => (theme.darkMode ? "#0a415b" : "#dedede")};
-  padding-top: 1.5rem;
-  padding-left: 48%;
-  text-align: left;
-  display: ${(props) => (props.open ? "none" : "block")};
+  padding-top: 1rem;
+  text-align: center;
+  visibility: ${(props) => (props.open ? "hidden" : "visible")};
+  opacity: ${(props) => (props.open ? "0" : "0.6")};
+
+  transition-property: visibility, opacity;
+  transition-duration: ${({ theme }) => theme.transitions.long};
 
   animation-duration: 5s;
   animation-name: bounce;
   animation-iteration-count: infinite;
 
+  display: ${(props) => (props.open ? "none" : "block")};
+
   @media only screen and (min-width: 768px) {
     font-size: 2rem;
-    padding-left: 12rem;
   }
 
   @keyframes bounce {
@@ -96,9 +104,12 @@ const Header: React.FC<{
   return (
     <StyledHeader open={open}>
       <HeadingWrapper onClick={() => handleHeaderClick("about")}>
+        {/* TODO: change heading to open, not true - fix font sizes */}
         <Heading open={true}>Max Pekarsky</Heading>
         <Subheading open={true}>full-stack product engineer</Subheading>
-        <Finger open={true} />
+        <StyledFinger open={open}>
+          <FontAwesomeIcon icon={faHandPointUp} />
+        </StyledFinger>
       </HeadingWrapper>
       <DarkModeToggle
         open={open}
