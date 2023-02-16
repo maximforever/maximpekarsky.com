@@ -7,6 +7,7 @@ const StyledDarkModeToggle = styled.div<{ darkMode: boolean }>`
   color: ${(props) => (props.darkMode ? "yellow" : "blue")};
   svg {
     font-size: 2rem;
+    margin-top: 1rem;
   }
 
   &:hover {

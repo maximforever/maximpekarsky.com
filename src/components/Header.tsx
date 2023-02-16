@@ -5,7 +5,6 @@ const StyledHeader = styled.header`
   padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 
 const HeadingWrapper = styled.div``;
