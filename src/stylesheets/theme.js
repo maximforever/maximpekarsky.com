@@ -25,7 +25,8 @@ const lightModeTheme = {
     monospace: `"Source Code Pro", monospace`,
   },
   transitions: {
-    normal: "0.5",
+    long: "1s",
+    medium: "0.5s",
     short: "0.3s",
   },
 };
@@ -59,7 +60,8 @@ const darkModeTheme = {
     monospace: `"Source Code Pro", monospace`,
   },
   transitions: {
-    normal: "7s",
+    long: "1s",
+    medium: "0.5s",
     short: "0.3s",
   },
 };
