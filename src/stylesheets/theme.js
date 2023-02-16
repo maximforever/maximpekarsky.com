@@ -26,7 +26,7 @@ const lightModeTheme = {
   },
   transitions: {
     normal: "0.5",
-    fast: "0.3s",
+    short: "0.3s",
   },
 };
 
@@ -60,7 +60,7 @@ const darkModeTheme = {
   },
   transitions: {
     normal: "7s",
-    fast: "0.3s",
+    short: "0.3s",
   },
 };
 

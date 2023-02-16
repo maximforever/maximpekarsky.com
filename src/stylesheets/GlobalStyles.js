@@ -10,8 +10,8 @@ const GlobalStylesheet = createGlobalStyle`
     padding: 0;
     background: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.black};
-    transition: color ${({ theme }) => theme.transitions.fast};
-    transition: background ${({ theme }) => theme.transitions.fast};
+    transition: color ${({ theme }) => theme.transitions.short};
+    transition: background ${({ theme }) => theme.transitions.short};
   }
 
   .preload {

@@ -8,8 +8,9 @@ import { darkModeTheme, lightModeTheme } from "./stylesheets/theme";
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import GlobalStylesheet from "./stylesheets/GlobalStyles";
-import { Header } from "./components/Header";
-import { Nav } from "./components/Nav";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Nav from "./components/Nav";
 import { PageType } from "./types";
 import ProjectsPage from "./components/ProjectsPage";
 import { ThemeProvider } from "styled-components";
@@ -22,6 +23,7 @@ function App() {
   );
 
   const [page, setPage] = useState<PageType>("about");
+  const [appIsOpen, setAppIsOpen] = useState<boolean>(false);
   const [appLoaded, setAppLoaded] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(
     localStorageThemePreference
@@ -45,6 +47,10 @@ function App() {
 
   const handleNavClick = (newPage: PageType) => {
     setPage(newPage);
+  };
+
+  const handleHeaderClick = () => {
+    setAppIsOpen(!appIsOpen);
   };
 
   const router = () => {
@@ -73,10 +79,12 @@ function App() {
         <Header
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          handleNavClick={handleNavClick}
+          handleHeaderClick={handleHeaderClick}
         />
-        <Nav page={page} handleNavClick={handleNavClick} />
-        {router()}
+        <MainContent open={appIsOpen}>
+          <Nav page={page} handleNavClick={handleNavClick} />
+          {router()}
+        </MainContent>
       </main>
     </ThemeProvider>
   );

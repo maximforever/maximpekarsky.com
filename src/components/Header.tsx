@@ -76,14 +76,14 @@ const Finger = styled.span<{ open: boolean }>`
   }
 `;
 
-export const Header: React.FC<{
+const Header: React.FC<{
   darkMode: boolean;
   toggleDarkMode: () => void;
-  handleNavClick: (newPage: PageType) => void;
-}> = ({ darkMode, toggleDarkMode, handleNavClick }) => {
+  handleHeaderClick: (newPage: PageType) => void;
+}> = ({ darkMode, toggleDarkMode, handleHeaderClick }) => {
   return (
     <StyledHeader>
-      <HeadingWrapper onClick={() => handleNavClick("about")}>
+      <HeadingWrapper onClick={() => handleHeaderClick("about")}>
         <Heading open={true}>Max Pekarsky</Heading>
         <Subheading open={true}>full-stack product engineer</Subheading>
         <Finger open={true} />
@@ -92,3 +92,5 @@ export const Header: React.FC<{
     </StyledHeader>
   );
 };
+
+export default Header;

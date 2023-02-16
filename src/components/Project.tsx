@@ -90,7 +90,7 @@ const ImageOverlay = styled.div`
     background: black;
     opacity: 0.2;
     transition-property: opacity;
-    transition-duration: ${({ theme }) => theme.transitions.fast};
+    transition-duration: ${({ theme }) => theme.transitions.short};
   }
 `;
 

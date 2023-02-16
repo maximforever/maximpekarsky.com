@@ -85,10 +85,7 @@ interface NavProps {
   handleNavClick: (page: PageType) => void;
 }
 
-export const Nav: React.FunctionComponent<NavProps> = ({
-  page,
-  handleNavClick,
-}) => {
+const Nav: React.FunctionComponent<NavProps> = ({ page, handleNavClick }) => {
   return (
     <>
       <DesktopNav>
@@ -154,3 +151,5 @@ export const Nav: React.FunctionComponent<NavProps> = ({
     </>
   );
 };
+
+export default Nav;
