@@ -2,10 +2,12 @@ import DarkModeToggle from "./DarkModeToggle";
 import { PageType } from "../types";
 import styled from "styled-components/macro";
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header<{ open: boolean }>`
+  margin-top: ${(props) => (props.open ? "0vh" : "40vh")};
   padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
+  transition: margin-top, ${({ theme }) => theme.transitions.long};
 `;
 
 const HeadingWrapper = styled.div`
@@ -83,7 +85,7 @@ const Header: React.FC<{
   handleHeaderClick: (newPage: PageType) => void;
 }> = ({ open, darkMode, toggleDarkMode, handleHeaderClick }) => {
   return (
-    <StyledHeader>
+    <StyledHeader open={open}>
       <HeadingWrapper onClick={() => handleHeaderClick("about")}>
         <Heading open={true}>Max Pekarsky</Heading>
         <Subheading open={true}>full-stack product engineer</Subheading>
