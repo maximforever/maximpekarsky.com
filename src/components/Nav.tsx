@@ -2,6 +2,7 @@ import { faBuilding, faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { faFeatherPointed, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageType } from "../types";
+import Resume from "../assets/Max_Pekarsky_Resume.pdf";
 import styled from "styled-components/macro";
 
 const DesktopNav = styled.nav`
@@ -113,6 +114,11 @@ export const Nav: React.FunctionComponent<NavProps> = ({
           onClick={() => handleNavClick("work")}
         >
           Work
+        </NavItem>
+        <NavItem>
+          <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <span>Resume</span>
+          </a>
         </NavItem>
       </DesktopNav>
 
