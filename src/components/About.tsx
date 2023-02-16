@@ -1,5 +1,5 @@
 import { AboutMeText } from "./StaticTextBlocks";
-import NarrowContainer from "./NarrowContainer";
+import { NarrowContainer } from "./Containers";
 import SocialMediaLinks from "./SocialMediaLinks";
 import styled from "styled-components/macro";
 

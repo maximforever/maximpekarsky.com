@@ -1,4 +1,4 @@
-import NarrowContainer from "./NarrowContainer";
+import { NarrowContainer } from "./Containers";
 import Project from "./Project";
 import { ProjectType } from "../types";
 import writing from "../writing.json";
