@@ -50,6 +50,7 @@ const NavItem = styled.div<{ active?: boolean }>`
   font-weight: 600;
   margin-right: 4rem;
   padding-bottom: 0.5rem;
+  /* TODO: there's a transition bug with this color */
   color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
   border-bottom: ${(props) =>
     props.active ? `3px solid ${props.theme.colors.salmon}` : "none"};
