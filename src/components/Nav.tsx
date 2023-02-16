@@ -116,11 +116,9 @@ export const Nav: React.FunctionComponent<NavProps> = ({
         >
           Work
         </NavItem>
-        <NavItem>
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
-            <span>Resume</span>
-          </a>
-        </NavItem>
+        <a href={Resume} target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
       </DesktopNav>
 
       <MobileNav>
