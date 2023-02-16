@@ -24,3 +24,6 @@ yarn-error.log*
 
 # firebase
 .firebase/
+
+# todo
+todo.md
