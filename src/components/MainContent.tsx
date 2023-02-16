@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 const MainContent = styled.div<{ open: boolean }>`
   overflow: hidden;
-  max-height: ${(props) => (props.open ? "100vh" : "0vh")};
+  max-height: ${(props) => (props.open ? "1000vh" : "0vh")};
   margin-left: ${(props) => (props.open ? "0" : "12vw")};
   opacity: ${(props) => (props.open ? "1" : "0")};
   font-size: ${(props) => (props.open ? "1rem" : "0.3rem")};

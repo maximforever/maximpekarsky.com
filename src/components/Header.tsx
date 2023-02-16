@@ -4,26 +4,26 @@ import { PageType } from "../types";
 import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components/macro";
 
-const StyledHeader = styled.header<{ open: boolean }>`
-  margin-top: ${(props) => (props.open ? "0vh" : "40vh")};
-  margin-left: ${(props) => (props.open ? "0vw" : "12vw")};
-  text-align: ${(props) => (props.open ? "left" : "center")};
-
+const StyledHeader = styled.header`
   padding-bottom: 2rem;
   display: flex;
   user-select: none;
   justify-content: space-between;
-  transition: margin-top, margin-left;
-  transition-duration: ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
     padding-bottom: 3rem;
-    margin-top: ${(props) => (props.open ? "0vh" : "40vh")};
-    margin-left: ${(props) => (props.open ? "0vw" : "32vw")};
   }
 `;
 
-const HeadingWrapper = styled.div`
+const HeadingWrapper = styled.div<{ open: boolean }>`
+  text-align: ${(props) => (props.open ? "left" : "center")};
+  margin-left: ${(props) => (props.open ? "0" : "50vw")};
+  margin-top: ${(props) => (props.open ? "0" : "50vh")};
+  transform: ${(props) =>
+    props.open ? "translate(0, 0)" : "translate(-50%, -50%)"};
+  transition: margin-top, margin-left, transform, width;
+  transition-duration: ${({ theme }) => theme.transitions.long};
+
   @media only screen and (min-width: 768px) {
     &:hover {
       cursor: pointer;
@@ -37,7 +37,7 @@ const Heading = styled.h1<{ open: boolean }>`
   font-size: ${(props) => (props.open ? "2.5rem" : "3rem")};
   font-weight: 300;
   margin: 0px;
-  //margin-bottom: -0.5rem;
+  transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
     font-size: 3rem;
@@ -49,6 +49,7 @@ const Subheading = styled.h2<{ open: boolean }>`
   font-size: ${(props) => (props.open ? "1rem" : "1.3em")};
   font-weight: 300;
   margin: 0;
+  transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
     font-size: ${(props) => (props.open ? "1.2rem" : "1.8rem")};
@@ -102,11 +103,10 @@ const Header: React.FC<{
   handleHeaderClick: (newPage: PageType) => void;
 }> = ({ open, darkMode, toggleDarkMode, handleHeaderClick }) => {
   return (
-    <StyledHeader open={open}>
-      <HeadingWrapper onClick={() => handleHeaderClick("about")}>
-        {/* TODO: change heading to open, not true - fix font sizes */}
-        <Heading open={true}>Max Pekarsky</Heading>
-        <Subheading open={true}>full-stack product engineer</Subheading>
+    <StyledHeader>
+      <HeadingWrapper open={open} onClick={() => handleHeaderClick("about")}>
+        <Heading open={open}>Max Pekarsky</Heading>
+        <Subheading open={open}>full-stack product engineer</Subheading>
         <StyledFinger open={open}>
           <FontAwesomeIcon icon={faHandPointUp} />
         </StyledFinger>

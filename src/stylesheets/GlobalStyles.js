@@ -36,7 +36,6 @@ const GlobalStylesheet = createGlobalStyle`
     margin: 0 auto;
     max-width: 2000px;
 
-    position: relative;
     min-height: 100vh;
     min-width: 350px;
     box-sizing: border-box;
