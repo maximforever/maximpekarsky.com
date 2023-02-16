@@ -70,7 +70,11 @@ function App() {
     <ThemeProvider theme={darkMode ? darkModeTheme : lightModeTheme}>
       <GlobalStylesheet theme={darkMode ? darkModeTheme : lightModeTheme} />
       <main className="App">
-        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Header
+          darkMode={darkMode}
+          toggleDarkMode={toggleDarkMode}
+          handleNavClick={handleNavClick}
+        />
         <Nav page={page} handleNavClick={handleNavClick} />
         {router()}
       </main>

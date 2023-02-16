@@ -1,4 +1,5 @@
 import DarkModeToggle from "./DarkModeToggle";
+import { PageType } from "../types";
 import styled from "styled-components/macro";
 
 const StyledHeader = styled.header`
@@ -7,7 +8,14 @@ const StyledHeader = styled.header`
   justify-content: space-between;
 `;
 
-const HeadingWrapper = styled.div``;
+const HeadingWrapper = styled.div`
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      cursor: pointer;
+      color: ${({ theme }) => theme.colors.salmon};
+    }
+  }
+`;
 
 const Heading = styled.h1<{ open: boolean }>`
   font-family: ${({ theme }) => theme.fonts.serif};
@@ -71,10 +79,11 @@ const Finger = styled.span<{ open: boolean }>`
 export const Header: React.FC<{
   darkMode: boolean;
   toggleDarkMode: () => void;
-}> = ({ darkMode, toggleDarkMode }) => {
+  handleNavClick: (newPage: PageType) => void;
+}> = ({ darkMode, toggleDarkMode, handleNavClick }) => {
   return (
     <StyledHeader>
-      <HeadingWrapper>
+      <HeadingWrapper onClick={() => handleNavClick("about")}>
         <Heading open={true}>Max Pekarsky</Heading>
         <Subheading open={true}>full-stack product engineer</Subheading>
         <Finger open={true} />
