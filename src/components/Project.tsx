@@ -81,7 +81,6 @@ const StyledGif = styled.img<{ gifPath: string }>`
     height: 250px;
     max-width: 400px;
     box-sizing: content-box;
-    background-size: cover;
     margin-bottom: 0px;
     margin-right: 1rem;
   }
