@@ -66,14 +66,16 @@ const MobileNavItem = styled(NavItem)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 2.3;
+  line-height: 2;
   margin: 0;
+  font-weight: 400;
   border-right: 1px solid gray;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.3rem;
+  font-size: 0.9rem;
 
   svg {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-top: 0.5rem;
   }
 

@@ -121,7 +121,7 @@ const Info = styled.div``;
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
