@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#canvas {
+    height:500px;
+    width: 220px;
+    border: 1px solid black;
+    display: flex;
+}
+
+#car-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 10px;
+}
+
+#controls {
+    display: block;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+}
+
+.input-label {
+    display: inline;
+}
+
+#car-info h2{
+    margin: 0;
+}
+
+@media handheld, screen and (max-width: 550px) {
+    #canvas {
+        height: 681px;
+        width: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #car-info {
+        width: 95%;
+    }
+
+}

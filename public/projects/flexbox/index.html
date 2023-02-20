@@ -1,0 +1,104 @@
+<HTML>
+    <HEAD> 
+        <TITLE>Flexbox</TITLE>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel = "stylesheet" type="text/css" href = "style.css"></style>
+    </HEAD>
+
+    <BODY>
+        <div id = "control-panel">
+            <p class = "control-label">Flex direction</p>
+            
+            <input type="radio" class = "flexbox-direction-option" name="flexbox-direction" id ="direction-row" value="row" checked>
+            <label for="direction-row">Row</label>
+
+            <input type="radio" class = "flexbox-direction-option" name="flexbox-direction" id ="direction-column" value="column">
+            <label for="direction-column">Column</label>
+
+            <input type="radio" class = "flexbox-direction-option" name="flexbox-direction" id ="direction-row-reverse" value="row-reverse">
+            <label for="direction-row-reverse">Row-reverse</label>
+
+            <input type="radio" class = "flexbox-direction-option" name="flexbox-direction" id ="direction-column-reverse" value="column-reverse">
+            <label for="direction-column-reverse">Column-reverse</label>
+
+            <p class = "control-label">Column width</p>
+            
+            <input type="radio" class = "column-width-option" name="column-width" id ="width-one-hundred" value="100" >
+            <label for="width-one-hundred">100%</label>
+
+            <input type="radio" class = "column-width-option" name="column-width" id ="width-fifty" value="50" >
+            <label for="width-fifty">50%</label>
+
+            <input type="radio" class = "column-width-option" name="column-width" id ="width-thirty-three" value="33" checked>
+            <label for="width-thirty-three">33%</label>
+
+            <input type="radio" class = "column-width-option" name="column-width" id ="width-twenty-five" value="25">
+            <label for="width-twenty-five">25%</label>
+
+            <input type="radio" class = "column-width-option" name="column-width" id = "width-twenty" value="20">
+            <label for="width-twenty">20%</label>
+
+
+            <p class = "control-label">Flex wrap</p>
+            
+            <input type="radio" class = "flex-wrap-option" name="flex-wrap" id ="nowrap" value="nowrap" checked>
+            <label for="nowwrap">No wrap</label>
+
+            <input type="radio" class = "flex-wrap-option" name="flex-wrap" id ="wrap" value="wrap" >
+            <label for="wrap">Wrap</label>
+
+
+            <p class = "control-label">Justify content</p>
+            
+            <input type="radio" class = "justify-content-option" name="justify-content" id ="justify-flex-start" value="flex-start" checked>
+            <label for="justify-flex-start">Flex start</label>
+
+            <input type="radio" class = "justify-content-option" name="justify-content" id ="justify-flex-end" value="flex-end" >
+            <label for="justify-flex-end">Flex end</label>
+
+            <input type="radio" class = "justify-content-option" name="justify-content" id ="justify-center" value="center" >
+            <label for="justify-center">Center</label>
+
+            <input type="radio" class = "justify-content-option" name="justify-content" id ="justify-space-around" value="space-around" >
+            <label for="justify-space-around">Space around</label>
+
+            <input type="radio" class = "justify-content-option" name="justify-content" id ="justify-space-between" value="space-between" >
+            <label for="justify-space-between">Space between</label>
+
+
+
+
+            <p class = "control-label">Align items</p>
+            
+            <input type="radio" class = "align-items-option" name="align-items" id ="align-flex-start" value="flex-start" checked>
+            <label for="align-flex-start">Flex start</label>
+
+            <input type="radio" class = "align-items-option" name="align-items" id ="align-flex-end" value="flex-end" >
+            <label for="align-flex-end">Flex end</label>
+
+            <input type="radio" class = "align-items-option" name="align-items" id ="align-center" value="center" >
+            <label for="align-center">Center</label>
+
+            <input type="radio" class = "align-items-option" name="align-items" id ="align-stretch" value="stretch" >
+            <label for="align-stretch">Stretch</label>
+
+            <input type="radio" class = "align-items-option" name="align-items" id ="align-baseline" value="baseline" >
+            <label for="align-baseline">Baseline</label>
+
+        </div>
+
+        <div id = "content">
+            
+            <p id = "paragraph-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus mi in tellus lobortis sodales non ut lectus. Integer interdum luctus diam et lacinia. Suspendisse varius odio purus. Vestibulum et nisi vel tortor rhoncus auctor. Integer id enim at justo lacinia placerat ac id dolor. Nunc feugiat, erat quis imperdiet molestie, dolor risus varius magna, eget porttitor nibh nibh nec leo. Morbi gravida feugiat est eu luctus. Fusce pulvinar faucibus sapien, id condimentum nibh elementum vel. Proin viverra odio vitae arcu commodo, et ornare felis elementum.</p>
+            
+            <p id = "paragraph-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus mi in tellus lobortis sodales non ut lectus. Integer interdum luctus diam et lacinia. Suspendisse varius odio purus. Vestibulum et nisi vel tortor rhoncus auctor. Integer id enim at justo lacinia placerat ac id dolor. Nunc feugiat, erat quis imperdiet molestie, dolor risus varius magna, eget porttitor nibh nibh nec leo. Morbi gravida feugiat est eu luctus. Fusce pulvinar faucibus sapien, id condimentum nibh elementum vel. Proin viverra odio vitae arcu commodo, et ornare felis elementum.</p>
+            
+            <p id = "paragraph-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus mi in tellus lobortis sodales non ut lectus. Integer interdum luctus diam et lacinia. Suspendisse varius odio purus. Vestibulum et nisi vel tortor rhoncus auctor. Integer id enim at justo lacinia placerat ac id dolor. Nunc feugiat, erat quis imperdiet molestie, dolor risus varius magna, eget porttitor nibh nibh nec leo. Morbi gravida feugiat est eu luctus. Fusce pulvinar faucibus sapien, id condimentum nibh elementum vel. Proin viverra odio vitae arcu commodo, et ornare felis elementum.</p>
+
+        </div>
+        <script src="assets/jquery-3.2.1.min.js"></script>
+        <script src = "script.js"></script>
+    </BODY>
+
+</HTML>

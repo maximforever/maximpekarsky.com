@@ -1,0 +1,138 @@
+<HTML>
+    <HEAD> 
+        <TITLE>Battle Simulator</TITLE>
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento|Lato:400,700" rel="stylesheet">
+        <link rel = "stylesheet" type="text/css" href = "style.css"></style>
+        <meta name="viewport" content="width=device-width" />
+    </HEAD>
+
+    <BODY>
+        <div class = "wrapper">
+
+            <div id = "hint-box"></div>
+
+            <div id = "intro-panel">
+                <div id = "intro-top">
+                    <h1>QRL Battle Simulator</h1>
+                </div>
+                <div id = "intro-bottom">
+                    <p>This is a GUI for a battle simulator I built for <a href = "https://github.com/maximforever/qrl" target = "_blank">QRL</a>, a text-based multiplayer game I'm working on. This algorithm resolves battles between two players, each with multiple units. The simulator can also iterate through multiple runs to determine the probability of each player winning with their current units. <a></a></p><div class = "hint" id = "master-hint"><span class = "text">?</span></div>
+                </div>    
+            </div>
+            <div class = "control-panel"><!-- 
+             --><div class = "panel-section" id = "left-column">
+                    <div class = "panel-section-header"><p>Unit Base Stats</p><div class = "hint" id = "base-stats-hint"><span class = "text">?</span></div></div>
+                    <div class = "panel-quarter">
+                        <div class = "small-header"><p>Footman Base Stats</p><div class = "hint" id = "footman-hint"><span class = "text">?</span></div></div>
+                    
+                        <div class = "stat">
+                            <div>Strength: <span id="footman-strength"></span>/10</div>
+                            <div class = "change-numbers" data-type = "footman-strength"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                        <div class = "stat">
+                            <div>Armor: <span id="footman-armor"></span>/10</div>
+                            <div class = "change-numbers" data-type = "footman-armor"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                        <div class = "stat">
+                            <div>Speed: <span id="footman-speed"></span>/10</div>
+                            <div class = "change-numbers" data-type = "footman-speed"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                        <div class = "stat">
+                            <div>HP: <span id="footman-hp"></span>/10</div>
+                            <div class = "change-numbers" data-type = "footman-hp"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                    </div>
+                    <div class = "panel-quarter">
+                        <div class = "small-header"><p>Archer Base Stats</p><div class = "hint" id = "archer-hint"><span class = "text">?</span></div></div>
+                        
+                        <div class = "stat">
+                            <div>Strength: <span id="archer-strength"></span>/10</div>
+                            <div class = "change-numbers" data-type = "archer-strength"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                        <div class = "stat">
+                            <div>Armor: <span id="archer-armor"></span>/10</div>
+                            <div class = "change-numbers" data-type = "archer-armor"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                        <div class = "stat">
+                            <div>Speed: <span id="archer-speed"></span>/10</div>
+                            <div class = "change-numbers" data-type = "archer-speed"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                        <div class = "stat">
+                            <div>HP: <span id="archer-hp"></span>/10</div>
+                            <div class = "change-numbers" data-type = "archer-hp"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                        </div>
+                         
+                    </div>
+
+                </div><!-- 
+             --><div class = "panel-section" id = "right-column">
+                    <div class = "panel-section-header"><p>Player Units</p><div class = "hint" id = "player-units-hint"><span class = "text">?</span></div></div>
+                    <div class = "panel-quarter">                   
+                        <div class = "player-units" id = "player1">
+                            <div class = "small-header">Player1:</div>
+                            <div class = "stat">
+                                <div>Footmen: <span id = "p1footmen"></span>/15</div><!-- 
+                             --><div class = "change-numbers" data-type = "p1footmen"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                                <br>
+                            </div>
+                            <div class = "stat">
+                                <div>Archers: <span id = "p1archers"></span>/15</div><!-- 
+                             --><div class = "change-numbers" data-type = "p1archers"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                            </div>
+                        </div><!-- 
+                     --><div class = "player-units" id = "player2">
+                            <div class = "small-header">Player2:</div>
+                            <div class = "stat">
+                                <div>Footmen: <span id = "p2footmen"></span>/15</div><!-- 
+                             --><div class = "change-numbers" data-type = "p2footmen"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                                <br>
+                            </div>
+                            <div class = "stat">
+                                <div>Archers: <span id = "p2archers"></span>/15</div><!-- 
+                             --><div class = "change-numbers" data-type = "p2archers"><button class = "decrement">-</button><button class = "increment">+</button></div>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                    <div class = "panel-quarter">
+                        <div id = "controls">
+                            <div class = "control-section" id = "run-buttons">
+                                Runs:
+                                <span class = "count" id = "active-run" data-count = "10">10</span>
+                                <span class = "count" data-count = "100">100</span>
+                                <span class = "count" data-count = "1000">1,000</span>
+                                <span class = "count" data-count = "10000">10,000</span>
+                            </div>
+                            <div class = "control-section" id = "launch">
+                                <button id = "run">Run Battle</button>
+                            </div>
+                        </div>
+                        <div id = "win-stats">
+                            <div class = "win-rate" id = "p1-win-rate">
+                                <span id = "p1wins">0%</span>
+                            </div>
+                            <div class = "win-rate" id = "p2-win-rate">
+                                <span id = "p2wins">0%</span>
+                            </div>
+                        </div>
+                        <div id = "progress-meter">
+                            <div id = "complete"></div>
+                        </div>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+
+            <div id = "footer">
+                <p>A project by <a href = "http://maximpekarsky.com" target = "_blank">Maxim Pekarsky</a></p>
+            </div>
+            
+            
+
+        </div>
+        <script src = "script.js"></script>
+    </BODY>
+</HTML>

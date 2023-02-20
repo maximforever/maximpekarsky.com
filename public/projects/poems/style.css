@@ -1,0 +1,111 @@
+
+
+body {
+    background: #e2d7b4;
+    color: #906d3e;
+    font-family: 'Averia Serif Libre', cursive;
+
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.page-title{
+    text-align: center;
+}
+
+.section-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poem {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#poem-body {
+    font-size: 1.5rem;
+}
+
+.counter {
+    color: #d49c52;
+    text-align: center;
+}
+
+.toggle {
+    color: #d49c52;
+    align-self: center;
+    margin: 0 25px;
+    font-size: 4rem;
+}
+
+.toggle:hover{
+    color: #c37234;
+    cursor: pointer;
+}
+
+#random {
+
+    border: 1px solid gray;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #906d3e;
+    background: none;
+}
+
+#random:hover {
+    background: #cec4a3;
+}
+
+#random:active, #random:focus {
+    outline: none;
+}
+
+
+#loading-bar {
+    display: none;
+    text-align: center;
+    font-size: 2em;
+    /*background: #bbbbbb;*/
+
+    background: #92a992;
+    border-radius: 10px;
+    margin: 30px 20px;
+}
+
+#progress-bar {
+    z-index: 2;
+    background: #92a992;
+}
+
+#percent-count {
+    z-index: 3;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .page-title {
+        font-size: 1.6em;
+        margin: 30px 0px;
+    }
+
+    .toggle {
+        font-size: 2em;
+    }
+
+    #poem-body {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,24 @@
+#canvas {
+    border: 1px solid black;
+    vertical-align: middle;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background: #1E4B5E;
+    border: 3px solid #0A222D;
+}
+
+
+@media (max-width: 720px){
+    #canvas {
+    border: 1px solid black;
+    vertical-align: middle;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background: #1E4B5E;
+    border: 3px solid #0A222D;
+}
+}

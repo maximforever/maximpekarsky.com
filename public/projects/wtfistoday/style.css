@@ -1,0 +1,236 @@
+:root {
+  --border-color: none ;
+}
+
+/* GLOBAL STYLING */
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #C3EB78;
+    color: #245644;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a, a:visited {
+    color: #0c7168;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #C14953;
+    text-decoration: none;
+}
+
+#holiday-tag .em, #holiday-tag .em-svg {
+    height: 8vh;
+    width: 8vh;
+}
+
+/* SECTIONS */
+
+.container {
+    padding: 5vw;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+#holiday-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(10,10,10, 0.1);
+    width: 100%;
+    min-width: 220px;
+}
+
+#holiday-info-wrapper {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tag-wrapper, #holiday-counter-wrapper, #holiday-info-wrapper  {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+/**/
+
+#main-page-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#main-holiday-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.panel-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+
+/**/
+
+
+
+
+
+
+
+
+
+#date-section {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#date-now{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+#holiday-section{
+    height: 50vh;
+}
+
+
+#share-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#footer-section{
+    height: 3vh;
+    color: #868686;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    background: #313131;
+    color: #c3eb78;
+    align-items: center;
+}
+
+#footer-section a{
+    color: #83c7f3;
+}
+
+#footer-smiley {
+    font-size: 0.7rem;
+}
+
+#event-counter {
+    display: flex;
+    padding: 0px 20%;
+}
+
+
+/* HOLIDAY SECTION*/
+
+#date-label, #share-label{
+    text-transform: uppercase;
+    height: 5vh;
+    text-align: center;
+}
+
+#holiday-info-main {
+    height: calc(25vh - 30px);
+}
+
+#holiday-link{
+    font-size: calc(3em - 15px);
+    font-weight: 500;
+    color: #3a3009;
+    text-decoration: none;
+    width: calc(100% - 30px);
+}
+
+#holiday-link:hover {
+    color: #C14953;
+}
+
+#holiday-tag {
+    font-size: 5vh;
+}
+
+/* SHARE ICON SECTION */
+
+#share-section .fa {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+/* CHEVRONS */
+
+.panel-side:hover {
+    color: #C14953;
+    cursor: pointer;
+}
+
+/* COUNTER */
+#counter-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.counter-bullet {
+    height: 0.7rem;
+    width: 0.7rem;
+    margin: 0 5px;
+    border: 1px solid rgba(36, 86, 68, 0.6);
+    box-shadow: 0px 0px 10px #245644;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.active-bullet {
+    background: #83c7f3;
+    border: 1px solid rgba(36, 86, 68, 1);
+}
+
+.fa-heart {
+    color: red;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 600px;
+        padding: 0;
+    }
+
+    #holiday-info-section {
+        min-width: 400px;
+    }
+
+    #holiday-info-wrapper {
+        height: 12rem;
+    }
+
+}

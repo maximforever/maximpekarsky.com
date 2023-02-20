@@ -1,0 +1,55 @@
+<HTML>
+    <HEAD> 
+        <TITLE>Poem by Your Sprog</TITLE>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,300i,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+
+        <link rel="icon" href="assets/icon.png" />
+        <link rel = "stylesheet" type="text/css" href = "style.css"></style>
+    
+    </HEAD>
+
+    <BODY>
+
+        <h1 class = "page-title">A Poem For Your Sprog</h1>
+        
+        <div class = "controls">
+            <div class = "toggle toggle-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <button id = "random">Random</button>
+
+            <div class = "toggle toggle-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <div class = "section-main">
+
+            <div class = "poem">
+                <div id = "poem-body">
+                </div>
+                <div class = "counter"><a href = "" id = "poem-link" target = "_blank">Poem <span id = "current-count">0</span> of <span id = "total-count">0</span></a></div>
+            </div>
+
+            <div id = "loading-bar">
+                
+                <div id = "percent-count"></div>
+            </div>
+
+        </div>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "script.js"></script>
+    </BODY>
+
+</HTML>

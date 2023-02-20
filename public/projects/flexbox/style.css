@@ -1,0 +1,49 @@
+:root {
+    --orange: #F18F01; 
+    --blue: #427AA1; 
+    --milky: #EBF3E3; 
+    --milky-dark: #d0d8c6;
+    --green: #679436; 
+    --gray: #414535; 
+}
+
+
+body {
+    background: var(--milky);
+    color: #626262;
+}
+
+#control-panel {
+    padding: 15px;
+    background: var(--milky-dark);
+    margin-bottom: 10px;
+    display: table;
+}
+
+.control-label {
+    font-weight: 600;
+}
+
+#content{
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--gray);
+}
+
+#content p {
+    padding: 10px;
+    background: var(--milky-dark);
+    margin: 5px;
+}
+
+#paragraph-one {
+    color; var(--blue);
+}
+
+#paragraph-two {
+    color: var(--green);
+}
+
+#paragraph-three {
+    color: var(--orange); 
+}

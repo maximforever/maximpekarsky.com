@@ -1,0 +1,45 @@
+#canvas {
+    border: 1px solid black;
+    vertical-align: middle;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background: #0B0915;
+    border: 3px solid #201E28;
+}
+
+#controls {
+
+    position: absolute;
+    top: 95vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+@media (max-width: 720px){
+    #canvas {
+    border: 1px solid black;
+    vertical-align: middle;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+/*    -webkit-transform: translateX(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translate(-50%, -50%);*/
+
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background: #0B0915;
+    border: 3px solid #201E28;
+
+
+    button{
+        height: 20px;
+        width: 50px;
+    }
+}

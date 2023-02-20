@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<HTML>
+    <HEAD> 
+        <TITLE>Coin Flipper</TITLE>
+
+        <!--  Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+
+        <!-- ALT -->
+        <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+
+        <!-- Browser icon -->
+        <link rel="icon" href="assets/icon.png" />
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"></style>
+
+    </HEAD>
+
+
+    <BODY>
+
+    
+        <div id = "container">
+
+            <h2 id = "page-title">Coin Flipper</h2>
+
+            <button id="flip-button">Flip</button>
+
+            <div class = "panel" id = "info-panel">
+                <div id = "flip-info">
+                    <div id = "flip-counter">Flip #: <span id = "flip-number">0</span></div>
+                    <div id = "coin">-</div>
+                </div>
+                <div id = "color-info">
+                    <span class ="color" id="white">0</span>
+                    <span class ="color" id="black">0</span>
+                </div>
+            </div>
+
+            <div class = "panel" id = "speed-panel">
+                <span id = "label">Speed</span>
+
+                <div id = "speed-wrapper">
+                    <div class = "speed-option" id="slow">Slow</div>
+                    <div class = "speed-option selected" id="medium">Medium</div>
+                    <div class = "speed-option" id="fast">Fast</div>
+                </div>
+                
+            </div>
+
+            <div id = "grid">
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Front-end JS -->
+        <script src="script.js"></script>
+
+    </BODY>
+</HTML>

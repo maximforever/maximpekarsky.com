@@ -1,0 +1,10 @@
+#canvas {
+    border: 1px solid black;
+    vertical-align: middle;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background: #A06262;
+    border: 3px solid black;
+}

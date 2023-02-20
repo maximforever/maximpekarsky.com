@@ -1,0 +1,37 @@
+<HTML>
+    <HEAD>
+        
+        <title>Traffic!</title>
+        <link href = "style.css" type = "text/css" rel = "stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </HEAD>
+
+    <BODY>
+        <div class = "container">
+            <div id = "car-info">    
+                
+                <div id = "controls">
+                    <input id = "additional" type="checkbox" value = "additional"> <span class = "input-label">Show collision/merge info</span>
+                    <br>
+                    <span class = "input-label">Animation speed: </span> <input id = "speed" type="range" min="1" max="7" datalist="animation">
+                </div>
+
+                <p>This is a traffic simulator. Each car has a (red) frustration meter that goes up as the car gets stuck behind other cars.</p>
+                <p>When the meter reaches its limit, the car attempts to pass on the left, like a good driver. If it is unable to do this, the driver starts getting angry, and the (teal) rage meter begins to go up. When this reaches its limit, the car breaks the law and passes on the left.</p>
+                <datalist id="animation">
+                  <option value="1" label="Slow">
+                  <option value="7" label="Fast">
+                </datalist>
+            </div>
+            <canvas height="500" width ="220" id = "canvas"></canvas>
+        </div>
+
+        
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "script.js"></script>
+    </BODY>
+
+</HTML>
+

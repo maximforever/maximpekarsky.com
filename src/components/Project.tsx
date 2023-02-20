@@ -1,4 +1,6 @@
 import { ProjectType } from "../types";
+import flipper from "../assets/project_images/flipper.gif";
+import flipperStatic from "../assets/project_images/flipper.png";
 import gemfm from "../assets/project_images/gemfm.gif";
 import gemfmStatic from "../assets/project_images/gemfm.png";
 import hackterms from "../assets/project_images/hackterms.gif";
@@ -36,6 +38,7 @@ const gifPaths: { [key: string]: string } = {
   wtfistoday: wtfistoday,
   songquiz: songquiz,
   wordsync: wordsync,
+  flipper: flipper,
 };
 
 const imagePaths: { [key: string]: string } = {
@@ -50,6 +53,7 @@ const imagePaths: { [key: string]: string } = {
   wtfistoday: wtfistodayStatic,
   songquiz: songquizStatic,
   wordsync: wordsyncStatic,
+  flipper: flipperStatic,
 };
 
 const StyledProject = styled.div`
@@ -218,7 +222,9 @@ const Project: React.FunctionComponent<{ project: ProjectType }> = ({
             <Title>{project.title}</Title>
           </a>
           {project.subtitle && <Subtitle>{project.subtitle}</Subtitle>}
-          <Description>{project.description}</Description>
+          <Description
+            dangerouslySetInnerHTML={{ __html: project.description }}
+          ></Description>
           {project.stack && renderStackTags()}
         </Info>
       </Wrapper>

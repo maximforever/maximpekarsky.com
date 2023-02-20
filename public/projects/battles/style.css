@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+ul li {
+    list-style: none;  
+}
+
+button{
+    box-shadow: none;
+}
+
+
+.blur {
+    filter: blur(2px);
+    color: rgba(117, 117, 117, 1);
+}
+
+ .wrapper {
+    padding: 5vh;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* HINT BOX */
+
+#hint-box{
+    z-index: 2;
+    background: white;
+    min-height: 40px;
+    max-width: 300px;
+    border: 1px solid black;
+    position: absolute;
+    visibility: hidden;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.hint {
+    background: white;
+    height: 15px;
+    width: 15px;
+    color: black;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 0.6em;
+    color: blue;
+    position: relative;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    margin: 0 5px;
+}
+
+.hint .text{
+    position: absolute;
+    top: 11%;
+    left: 35%;
+}
+
+#master-hint {
+    vertical-align: bottom;
+}
+
+
+/* HEADER PANEL */
+
+#intro-panel{
+    color: white;
+    border: 1px solid gray;
+    margin: 5px 0px;
+}
+
+#intro-panel h1{
+    margin: 0;
+    font-family: 'Quattrocento', serif;
+    font-size: 2.5em;
+}
+
+
+#intro-panel p{
+    margin: 0;
+    display: inline;
+}
+
+#intro-top {
+    background: rgb(80, 80, 80);
+    padding: 10px 15px;
+}
+
+#intro-bottom {
+    background: rgba(150, 150, 150, 0.2);
+    padding: 10px 15px;
+    color: black;
+}
+
+/* CONTROL PANEL */
+.small-header {
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 3px;
+    background: rgba(117, 117, 117, 1);
+    margin-bottom: 10px;
+}
+
+.small-header p {
+    margin: 0;
+    display: inline-block;
+}
+
+.small-header .hint {
+    margin: 0 5px;
+    vertical-align: initial;
+}
+
+
+#launch {
+    text-align: center;
+}
+
+#run {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background: #FF9700;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    box-shadow: 0px 0px 10px black;
+}
+
+#run:hover {
+    background: #FFB74F;
+}
+
+
+.panel-section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.panel-section-header{
+    height: 10%;
+    text-align: center;
+    background: rgb(80, 80, 80);
+    color: white;
+    border: 1px solid gray;
+    margin: 2px;
+    height: 41px;
+}
+
+.panel-section-header p {
+    margin: 0;
+    vertical-align: middle; 
+    padding-top: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#right-column{
+    width: 70%;
+}
+
+#left-column{
+    width: 30%;
+}
+
+.panel-quarter {
+    display: block;
+    height: 180px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 2px;
+    background: rgba(150,150,150, 0.2);
+}
+
+.player-units{  
+    width: calc(50% - 6px); /* !!! should be 50%*/
+    display: inline-block;
+    height: 100%;
+    margin: 0px 2px;
+}
+
+/* CONTROLS */
+
+#controls {
+    height: 22%;
+}
+
+.control-section {
+    display: inline-block;
+    text-align: center;
+}
+
+#run-buttons {
+    width: calc(50% - 8px);     /* !!! */
+    vertical-align: top;
+    text-align: left;
+}
+
+#launch {
+    width: 50%;
+}
+
+.change-numbers {
+    text-align: right;
+}
+
+
+.stat div {
+    display: inline-block;
+    width: 49%;                 /* !!! */
+}
+
+.stat button {
+    margin: 0px 4px;
+
+}
+
+
+/* WIN RATE */
+
+#win-stats {
+    height: 70%;
+}
+
+.win-rate{
+    font-family: 'Quattrocento', serif;
+    display: inline-block;
+    width: calc(50% - 4px);
+    font-size: 6em;
+    text-align: center; 
+}
+
+/* COUNT BUTTONS */
+
+.count {
+    background: rgba(150,150,150, 0.2);
+    padding: 3px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid gray;
+    font-size: 0.7em;
+    margin: 1px 0px ;
+    text-align: center;
+}
+
+.count:hover {
+    background: rgba(150,150,150, 0.2);
+}
+
+#active-run {
+    background: rgba(150,150,150, 0.6);
+    border: 2px solid #FF9700;
+}
+
+/* PROGRESS METER */
+
+#progress-meter {
+    background: red;
+    z-index: 0;
+    width: 100%;
+    height: 15%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#complete {
+    background: green;
+    z-index: 1;
+    height: 100%;
+    width: 0%;
+    max-width: 100%;
+}
+
+#footer {
+    width: 100%;
+    position: relative;
+    left: -5vh;
+}
+
+#footer p {
+    display: block;
+    text-align: center;
+}
+
+
+@media handheld, screen and (max-width: 768px) {
+
+
+
+
+    .wrapper {
+        padding: 1vh;
+    }
+
+    #left-column, #right-column {
+        width: 100%;
+    }
+
+    #controls {
+        height: 40%;
+    }
+
+
+    .panel-quarter {
+        height: 130px;
+        font-size: 0.8em;
+    }
+
+    #run-buttons {
+        width: calc(70% - 8px);     /* !!! */
+    }
+
+    #launch {
+        width: 30%;
+    }
+
+    #win-stats {
+        height: 50%;
+    }
+
+    .win-rate {
+        font-size: 4.1em;
+    }
+
+    #run {
+        font-size: 1.1em;
+    }
+
+    #intro-panel h1{
+        margin: 0;
+        font-family: 'Quattrocento', serif;
+        font-size: 2em;
+    }
+
+    #intro-panel p {
+        font-size: 0.9em;
+    }
+
+    #footer {
+        left: 0;
+    }
+
+
+}

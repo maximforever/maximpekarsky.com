@@ -65,7 +65,7 @@
   {
     "title": "WordSync",
     "subtitle": "What word am I thinking of?",
-    "link": "wordsync.fly.dev",
+    "link": "https://wordsync.fly.dev",
     "description": "A sockets.io powered Node/Express/MongoDB game that challenges two players to think of the same word at the same time?",
     "imageTitle": "wordsync",
     "stack": [
@@ -88,7 +88,7 @@
   {
     "title": "Traffic Simulator",
     "subtitle": "Hey, I'm trying to pass here!",
-    "link": "#",
+    "link": "/projects/traffic",
     "description": "A traffic simulator built with vanilla JS and HTML canvas",
     "imageTitle": "traffic",
     "stack": ["JavaScript", "Canvas"]
@@ -96,7 +96,7 @@
   {
     "title": "Text Clock",
     "subtitle": "Because words are better than numbers.",
-    "link": "#",
+    "link": "/projects/clock",
     "description": "A text clock with several color themes, including a festive Christmas theme",
     "imageTitle": "textclock",
     "stack": ["JavaScript", "HTML/CSS"]
@@ -104,9 +104,17 @@
   {
     "title": "WTF is today?",
     "subtitle": "What obscure food/science/awareness holiday is today?",
-    "link": "#",
+    "link": "/projects/wtfistoday",
     "description": "What obscure food/science/awareness holiday is today?",
     "imageTitle": "wtfistoday",
+    "stack": ["JavaScript", "HTML/CSS"]
+  },
+  {
+    "title": "Coin Flipper",
+    "subtitle": "Will it be heads... or tails?",
+    "link": "/projects/flipper",
+    "description": "A black/white grid generator based on coin flips - inspired by a <a href='https://www.reddit.com/r/mildlyinteresting/comments/9qnvy6/i_filled_in_the_squares_of_this_grid_according_to/' target='_blank'>reddit post</a>.",
+    "imageTitle": "flipper",
     "stack": ["JavaScript", "HTML/CSS"]
   }
 ]
