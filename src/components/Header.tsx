@@ -16,13 +16,11 @@ const StyledHeader = styled.header`
 `;
 
 const HeadingWrapper = styled.div<{ open: boolean }>`
-  text-align: ${(props) => (props.open ? "left" : "center")};
-  margin-left: ${(props) => (props.open ? "0" : "50vw")};
-  margin-top: ${(props) => (props.open ? "0" : "50vh")};
-  transform: ${(props) =>
-    props.open ? "translate(0, 0)" : "translate(-50%, -50%)"};
-  transition: margin-top, margin-left, transform, width;
+  text-align: center;
+  margin-top: ${(props) => (props.open ? "0" : "38vh")};
+  transition: margin-top, transform, width;
   transition-duration: ${({ theme }) => theme.transitions.long};
+  width: ${(props) => (props.open ? "0" : "100%")};
 
   @media only screen and (min-width: 768px) {
     &:hover {
@@ -37,6 +35,7 @@ const Heading = styled.h1<{ open: boolean }>`
   font-size: ${(props) => (props.open ? "2.5rem" : "3rem")};
   font-weight: 300;
   margin: 0px;
+  white-space: nowrap;
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
@@ -49,6 +48,7 @@ const Subheading = styled.h2<{ open: boolean }>`
   font-size: ${(props) => (props.open ? "1rem" : "1.3em")};
   font-weight: 300;
   margin: 0;
+  white-space: nowrap;
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
@@ -67,9 +67,13 @@ const StyledFinger = styled.div<{ open: boolean }>`
   transition-property: visibility, opacity;
   transition-duration: ${({ theme }) => theme.transitions.long};
 
-  animation-duration: 5s;
-  animation-name: bounce;
-  animation-iteration-count: infinite;
+  svg {
+    animation-duration: 5s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 0 auto;
+  }
 
   display: ${(props) => (props.open ? "none" : "block")};
 
