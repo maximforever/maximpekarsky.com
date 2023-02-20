@@ -6,6 +6,13 @@ import styled from "styled-components/macro";
 
 const SocialMediaIcons = styled.div`
   display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 3rem;
+  }
+
   a {
     height: 4rem;
     min-width: 4rem;
@@ -13,16 +20,13 @@ const SocialMediaIcons = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 1.5rem;
 
-    border: 1px solid ${({ theme }) => theme.colors.lightGray};
     border-radius: 0.5rem;
     user-select: none;
 
     @media only screen and (min-width: 768px) {
       height: 5rem;
       min-width: 5rem;
-      margin-right: 2rem;
     }
 
     svg {
@@ -36,10 +40,6 @@ const SocialMediaIcons = styled.div`
       font-size: 0.8rem;
       padding-top: 0.2rem;
       font-weight: 400;
-    }
-
-    &:hover {
-      border: 1px solid ${({ theme }) => theme.colors.red};
     }
   }
 `;

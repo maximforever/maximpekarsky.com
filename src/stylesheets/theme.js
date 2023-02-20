@@ -4,14 +4,14 @@ const lightModeTheme = {
     white: "white",
     blue: "blue",
     salmon: "red",
-    lightGray: "gray",
+    lightGray: "#e5e5e5",
   },
   backupColors: {
     black: "#343434",
     white: "#fdfdf5",
     blue: "#43b1df",
     salmon: "#f98072",
-    lightGray: "gray",
+    lightGray: "#e5e5e5",
   },
   borders: {
     lightGray: `1px solid #e4e4e4`,
@@ -39,14 +39,14 @@ const darkModeTheme = {
     white: "black",
     blue: "blue",
     salmon: "red",
-    lightGray: "gray",
+    lightGray: "#e5e5e5",
   },
   backupColors: {
     black: "#343434",
     white: "#fdfdf5",
     blue: "#43b1df",
     salmon: "#f98072",
-    lightGray: "gray",
+    lightGray: "#e5e5e5",
   },
   borders: {
     lightGray: `1px solid #e4e4e4`,

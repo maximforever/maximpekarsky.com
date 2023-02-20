@@ -5,11 +5,23 @@ import hackterms from "../assets/project_images/hackterms.gif";
 import hacktermsStatic from "../assets/project_images/hackterms.png";
 import maximpekarsky from "../assets/project_images/maximpekarsky.gif";
 import maximpekarskyStatic from "../assets/project_images/maximpekarsky.png";
+import spaceSquares from "../assets/project_images/spacesquares.gif";
+import spaceSquaresStatic from "../assets/project_images/spacesquares.png";
+import songquiz from "../assets/project_images/songquiz.gif";
+import songquizStatic from "../assets/project_images/songquiz.png";
 import styled from "styled-components/macro";
+import textclock from "../assets/project_images/textclock.gif";
+import textclockStatic from "../assets/project_images/textclock.png";
 import tinylogger from "../assets/project_images/tinylogger.gif";
 import tinyloggerStatic from "../assets/project_images/tinylogger.png";
+import traffic from "../assets/project_images/traffic.gif";
+import trafficStatic from "../assets/project_images/traffic.png";
 import trakr from "../assets/project_images/trakr.gif";
 import trakrStatic from "../assets/project_images/trakr.png";
+import wordsync from "../assets/project_images/wordsync.gif";
+import wordsyncStatic from "../assets/project_images/wordsync.png";
+import wtfistoday from "../assets/project_images/wtfistoday.gif";
+import wtfistodayStatic from "../assets/project_images/wtfistoday.png";
 
 // this allows us to get the image path dynamically by passing in the `imageTitle` property stored in the json
 const gifPaths: { [key: string]: string } = {
@@ -18,6 +30,12 @@ const gifPaths: { [key: string]: string } = {
   tinylogger: tinylogger,
   trakr: trakr,
   maximpekarsky: maximpekarsky,
+  traffic: traffic,
+  spacesquares: spaceSquares,
+  textclock: textclock,
+  wtfistoday: wtfistoday,
+  songquiz: songquiz,
+  wordsync: wordsync,
 };
 
 const imagePaths: { [key: string]: string } = {
@@ -26,10 +44,20 @@ const imagePaths: { [key: string]: string } = {
   tinylogger: tinyloggerStatic,
   trakr: trakrStatic,
   maximpekarsky: maximpekarskyStatic,
+  traffic: trafficStatic,
+  spacesquares: spaceSquaresStatic,
+  textclock: textclockStatic,
+  wtfistoday: wtfistodayStatic,
+  songquiz: songquizStatic,
+  wordsync: wordsyncStatic,
 };
 
 const StyledProject = styled.div`
-  padding-bottom: 9rem;
+  padding-bottom: 5rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 9rem;
+  }
 `;
 
 const StyledGif = styled.img<{ gifPath: string }>`
@@ -96,7 +124,6 @@ const ImageOverlay = styled.div`
 
 const ImageWrapper = styled.div`
   position: relative;
-  margin-bottom: 2rem;
 
   @media only screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -137,11 +164,43 @@ const Subtitle = styled.h3`
   color: ${({ theme }) => theme.colors.lightGray};
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  line-height: 1.5;
+`;
+
+const TagWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+`;
+
+const Tag = styled.div`
+  padding: 0.2rem 1.4rem;
+  background: ${({ theme }) => theme.colors.lightGray};
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.8rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 const Project: React.FunctionComponent<{ project: ProjectType }> = ({
   project,
 }) => {
+  const renderStackTags = () => {
+    if (project.stack === undefined) {
+      return null;
+    }
+
+    const tagHTML = project.stack.map((tag) => <Tag key={tag}>{tag}</Tag>);
+
+    return <TagWrapper>{tagHTML}</TagWrapper>;
+  };
+
   return (
     <StyledProject>
       <Wrapper>
@@ -160,6 +219,7 @@ const Project: React.FunctionComponent<{ project: ProjectType }> = ({
           </a>
           {project.subtitle && <Subtitle>{project.subtitle}</Subtitle>}
           <Description>{project.description}</Description>
+          {project.stack && renderStackTags()}
         </Info>
       </Wrapper>
     </StyledProject>

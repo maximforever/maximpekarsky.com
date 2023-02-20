@@ -3,7 +3,7 @@
     "title": "Hackterms",
     "subtitle": "Urban Dictionary for programming terms",
     "link": "https://www.hackterms.com",
-    "description": "Tired of reading arguments and tutorials, I built Hackterms for quick programming research and grew it and grew it to 1300 definitions from over a thousand contributors.",
+    "description": "I built Hackterms to be able to quickly look up programming terms without going down a rabbit hole of tutorials and arguments. I grew it to 1300 definitions from over a thousand contributors.",
     "imageTitle": "hackterms",
     "stack": [
       "Node.js",
@@ -53,5 +53,60 @@
     "description": "This portfolio is built with server-side rendered React.js, TypeScript, and styled-components",
     "imageTitle": "maximpekarsky",
     "stack": ["React.js", "TypeScript", "styled-components"]
+  },
+  {
+    "title": "Space Squares!",
+    "subtitle": "Defeat the evil square invaders",
+    "link": "https://spcsqrs.firebaseapp.com/",
+    "description": "Battle swarms of flesh-eating Space Squares in this throwback arcade game",
+    "imageTitle": "spacesquares",
+    "stack": ["JavaScript", "Canvas"]
+  },
+  {
+    "title": "WordSync",
+    "subtitle": "What word am I thinking of?",
+    "link": "wordsync.fly.dev",
+    "description": "A sockets.io powered Node/Express/MongoDB game that challenges two players to think of the same word at the same time?",
+    "imageTitle": "wordsync",
+    "stack": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Websockets",
+      "HTML/CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Song Quiz",
+    "subtitle": "Guess the song name from a snippet.",
+    "link": "https://which-song.firebaseapp.com/",
+    "description": "SongQuiz picks a random lyric snippet from a random song, and challenges the user to guess what the song is. It currently works with lyrics from 6 bands.",
+    "imageTitle": "songquiz",
+    "stack": ["Vue.js", "JavaScript", "Firebase"]
+  },
+  {
+    "title": "Traffic Simulator",
+    "subtitle": "Hey, I'm trying to pass here!",
+    "link": "#",
+    "description": "A traffic simulator built with vanilla JS and HTML canvas",
+    "imageTitle": "traffic",
+    "stack": ["JavaScript", "Canvas"]
+  },
+  {
+    "title": "Text Clock",
+    "subtitle": "Because words are better than numbers.",
+    "link": "#",
+    "description": "A text clock with several color themes, including a festive Christmas theme",
+    "imageTitle": "textclock",
+    "stack": ["JavaScript", "HTML/CSS"]
+  },
+  {
+    "title": "WTF is today?",
+    "subtitle": "What obscure food/science/awareness holiday is today?",
+    "link": "#",
+    "description": "What obscure food/science/awareness holiday is today?",
+    "imageTitle": "wtfistoday",
+    "stack": ["JavaScript", "HTML/CSS"]
   }
 ]
