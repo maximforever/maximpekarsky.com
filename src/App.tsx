@@ -14,7 +14,7 @@ import Nav from "./components/Nav";
 import { PageType } from "./types";
 import ProjectsPage from "./components/ProjectsPage";
 import { ThemeProvider } from "styled-components";
-import Work from "./components/Work";
+import WorkPage from "./components/WorkPage";
 import WritingPage from "./components/WritingPage";
 
 function App() {
@@ -59,7 +59,7 @@ function App() {
         return <About />;
         break;
       case "work":
-        return <Work />;
+        return <WorkPage />;
         break;
       case "writing":
         return <WritingPage />;

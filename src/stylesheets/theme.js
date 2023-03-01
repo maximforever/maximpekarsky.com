@@ -39,7 +39,7 @@ const darkModeTheme = {
     white: "black",
     blue: "blue",
     salmon: "red",
-    lightGray: "#e5e5e5",
+    lightGray: "#454545",
   },
   backupColors: {
     black: "#343434",
