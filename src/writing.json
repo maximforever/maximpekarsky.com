@@ -22,5 +22,23 @@
     "subtitle": "Bonusly Blog",
     "link": "https://blog.bonus.ly/engaging-remote-employees",
     "description": "Written early in the pandemic, this was my recap of cultural practices that helped keep the Bonusly team working."
+  },
+  {
+    "title": "They Didn't Teach Us This': A Crash Course for Your First Job in Software",
+    "subtitle": "StackOverflow Blog",
+    "link": "https://stackoverflow.blog/2019/09/05/they-didnt-teach-us-this-a-crash-course-for-your-first-job-in-software/",
+    "description": "An overview of how to go from hacking together projects to working on a real software team."
+  },
+  {
+    "title": "Let’s Get Graphic: A Few Ways To Draw On The Web",
+    "subtitle": "StackOverflow Blog",
+    "link": "https://stackoverflow.blog/2019/11/06/lets-get-graphic-a-few-ways-to-draw-on-the-web/",
+    "description": "In this article, we’ll go over some of the popular approaches to graphics-intensive projects on the web, compare their advantages, and look at some sample code. By the end, you’ll be able to confidently make your choice, and get drawing!"
+  },
+  {
+    "title": "Find Help Online Mindfully — and Effectively!",
+    "subtitle": "StackOverflow Blog",
+    "link": "https://stackoverflow.blog/2019/07/30/find-help-online-mindfully-and-effectively/",
+    "description": "Tips for effective online research as you code."
   }
 ]
