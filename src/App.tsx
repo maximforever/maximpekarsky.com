@@ -56,7 +56,7 @@ function App() {
   const router = () => {
     switch (page) {
       case "about":
-        return <About />;
+        return <About open={appIsOpen} />;
         break;
       case "work":
         return <WorkPage />;
