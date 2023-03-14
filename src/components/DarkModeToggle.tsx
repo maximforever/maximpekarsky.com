@@ -15,7 +15,7 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   color: ${(props) => (props.darkMode ? "yellow" : "blue")};
 
   transition-property: color, opacity, visibility, max-width;
-  transition-duration: ${({ theme }) => theme.transitions.long};
+  transition-duration: ${({ theme }) => theme.transitions.short};
   svg {
     font-size: 2rem;
     margin-top: 1rem;
