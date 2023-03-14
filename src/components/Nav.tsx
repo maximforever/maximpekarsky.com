@@ -11,7 +11,9 @@ import styled from "styled-components/macro";
 
 const DesktopNav = styled.nav`
   display: none;
-  padding: 3rem 0;
+  padding: 3rem 0 5vw 0;
+  width: 80%;
+  max-width: 1000px;
 
   .fa-file-pdf {
     padding-right: 0.5rem;
@@ -19,6 +21,7 @@ const DesktopNav = styled.nav`
 
   @media only screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 `;
 
@@ -54,15 +57,31 @@ const MobileNav = styled.nav<{ open: boolean }>`
   }
 `;
 
+// unlike most of the styles on the site, which are mobile-first
+// nav items and the navbar are defined desktop-first, then styled separately
+// as `MobileNavItem`
 const NavItem = styled.div<{ active?: boolean }>`
-  font-weight: 700;
-  margin-right: 6rem;
+  font-weight: 600;
   padding-bottom: 0.5rem;
   /* TODO: there's a transition bug with this color */
   color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
   border-bottom: ${(props) =>
     props.active ? `3px solid ${props.theme.colors.salmon}` : "none"};
   user-select: none;
+
+  @media only screen and (min-width: 768px) {
+    //font size scales with width between 768px and 1200px, then snaps to 1.6rem
+    font-size: 1.9vw;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.4rem;
+  }
+
+  a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
   &:hover {
     cursor: pointer;
@@ -83,7 +102,7 @@ const MobileNavItem = styled(NavItem)`
   font-size: 0.9rem;
 
   svg {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-top: 0.5rem;
   }
 
@@ -135,10 +154,12 @@ const Nav: React.FunctionComponent<NavProps> = ({
         >
           Work
         </NavItem>
-        <a href={Resume} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFilePdf} />
-          Resume
-        </a>
+        <NavItem>
+          <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFilePdf} />
+            Resume
+          </a>
+        </NavItem>
       </DesktopNav>
 
       <MobileNav open={open}>

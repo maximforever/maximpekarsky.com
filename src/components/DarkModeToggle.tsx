@@ -14,11 +14,20 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   max-width: ${(props) => (props.open ? "3rem" : "0rem")};
   color: ${(props) => (props.darkMode ? "#f6d36e" : "#055ca8")};
 
-  transition-property: color, opacity, visibility, max-width;
+  transition-property: opacity, visibility, max-width;
   transition-duration: ${({ theme }) => theme.transitions.short};
+
+  @media only screen and (min-width: 768px) {
+    padding-right: 7%;
+  }
+
   svg {
     font-size: 2rem;
     margin-top: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
   }
 
   &:hover {

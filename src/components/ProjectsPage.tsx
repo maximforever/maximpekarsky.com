@@ -16,9 +16,9 @@ const ProjectsPage = () => {
   ));
 
   return (
-    <MediumContainer>
+    <div>
       <ProjectList>{projectHTML}</ProjectList>
-    </MediumContainer>
+    </div>
   );
 };
 

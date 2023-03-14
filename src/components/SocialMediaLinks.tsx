@@ -14,12 +14,15 @@ const SocialMediaIcons = styled.div<{ open: boolean }>`
   overflow-y: hidden;
   max-height: ${(props) => (props.open ? "40rem" : "3rem")};
   transition-property: max-height;
-  transition-duration: ${({ theme }) => theme.transitions.veryLong};
+  transition-duration: ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
+    width: 25%;
     padding-top: 0;
-    padding-left: 10rem;
     flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+    box-sizing: border-box;
   }
 
   ${Icon} {
@@ -34,21 +37,37 @@ const SocialMediaIcons = styled.div<{ open: boolean }>`
     user-select: none;
 
     @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
       height: 5rem;
       min-width: 5rem;
+      margin-top: 0;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      justify-content: center;
     }
 
     svg {
       font-size: 1.5rem;
+
       @media only screen and (min-width: 768px) {
-        font-size: 2rem;
+        //font size scales with width between 768px and 1200px, then snaps to 1.6rem
+        font-size: 3.3vw;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        font-size: 3rem;
       }
     }
 
     span {
       font-size: 0.8rem;
       padding-top: 0.2rem;
-      font-weight: 400;
+      font-weight: 500;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
 `;

@@ -48,7 +48,7 @@ const WorkPage = () => {
           target="_blank"
           rel="nofollow noreferrer"
         >
-          <Title>Excecute Program</Title>
+          <Title>Execute Program</Title>
         </a>
         <WorkLogo src={executeprogram} />
         <Description>

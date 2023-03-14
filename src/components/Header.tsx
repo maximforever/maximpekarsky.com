@@ -16,8 +16,10 @@ const HeadingWrapper = styled.div<{ open: boolean }>`
   transition: margin-top, transform, width;
   transition-duration: ${({ theme }) => theme.transitions.long};
   width: ${(props) => (props.open ? "0" : "100%")};
+  padding-bottom: 2rem;
 
   @media only screen and (min-width: 768px) {
+    padding-bottom: 0;
     &:hover {
       cursor: pointer;
       color: ${({ theme }) => theme.colors.salmon};

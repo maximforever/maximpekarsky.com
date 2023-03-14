@@ -78,11 +78,10 @@ const StyledGif = styled.img<{ gifPath: string }>`
   background-size: cover;
 
   @media only screen and (min-width: 768px) {
-    height: 250px;
-    max-width: 400px;
+    height: 300px;
+    max-width: 480px;
     box-sizing: content-box;
     margin-bottom: 0px;
-    margin-right: 1rem;
   }
 `;
 
@@ -94,8 +93,8 @@ const StaticImage = styled.img<{ imagePath: string }>`
     background: ${(props) =>
       `url("${props.imagePath}") no-repeat center center`};
     background-size: cover;
-    height: 250px;
-    max-width: 400px;
+    height: 300px;
+    max-width: 480px;
     z-index: 2;
     position: absolute;
     border-radius: 0.5rem;
@@ -116,8 +115,8 @@ const ImageOverlay = styled.div`
     top: 0;
     width: 90vw;
 
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    width: 480px;
     background: ${({ theme }) => theme.colors.washedOutBlack};
     opacity: 0.2;
     transition-property: opacity;
@@ -130,6 +129,7 @@ const ImageWrapper = styled.div`
 
   @media only screen and (min-width: 768px) {
     margin-bottom: 0;
+    margin-right: 3rem;
 
     &:hover {
       cursor: pointer;
@@ -147,7 +147,11 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Info = styled.div``;
+const Info = styled.div`
+  @media only screen and (min-width: 768px) {
+    max-width: 600px;
+  }
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -161,7 +165,11 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   margin: 0;
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const Subtitle = styled.h3`
@@ -177,6 +185,10 @@ const Description = styled.p`
   line-height: 1.9;
   margin: 0;
   padding: 0.5rem 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const TagWrapper = styled.div`
