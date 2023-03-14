@@ -1,4 +1,4 @@
-import { NarrowContainer } from "./Containers";
+import { MediumContainer } from "./Containers";
 import Project from "./Project";
 import { ProjectType } from "../types";
 import writing from "../writing.json";
@@ -9,10 +9,10 @@ const WritingPage = () => {
   ));
 
   return (
-    <NarrowContainer>
+    <MediumContainer>
       <h2>My Writing</h2>
       {writingHTML}
-    </NarrowContainer>
+    </MediumContainer>
   );
 };
 

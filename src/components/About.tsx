@@ -14,7 +14,7 @@ const AboutWrapper = styled.div`
 
 const StyledAboutMeText = styled(NarrowContainer)`
   display: block;
-  line-height: 1.7;
+  line-height: 1.9;
   flex-grow: 1;
 `;
 

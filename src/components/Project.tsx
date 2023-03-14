@@ -118,7 +118,7 @@ const ImageOverlay = styled.div`
 
     height: 250px;
     width: 400px;
-    background: black;
+    background: ${({ theme }) => theme.colors.washedOutBlack};
     opacity: 0.2;
     transition-property: opacity;
     transition-duration: ${({ theme }) => theme.transitions.short};
@@ -160,15 +160,23 @@ const Wrapper = styled.div`
 
 const Title = styled.h2`
   margin: 0;
+  font-weight: 500;
+  font-size: 2.2rem;
 `;
 
 const Subtitle = styled.h3`
   margin: 0;
+  padding: 0.5rem 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: ${({ theme }) => theme.colors.lightGray};
+  text-transform: uppercase;
 `;
 
 const Description = styled.p`
-  line-height: 1.5;
+  line-height: 1.9;
+  margin: 0;
+  padding: 0.5rem 0;
 `;
 
 const TagWrapper = styled.div`
@@ -178,9 +186,11 @@ const TagWrapper = styled.div`
 `;
 
 const Tag = styled.div`
+  font-family: "Source Code Pro", monospace;
   padding: 0.2rem 1.4rem;
-  background: ${({ theme }) => theme.colors.lightGray};
-  font-size: 0.8rem;
+  background: ${({ theme }) => theme.colors.veryLightGray};
+  color: ${({ theme }) => theme.colors.blue};
+  font-size: 0.85rem;
   font-weight: 600;
   border-radius: 1rem;
   margin-right: 1rem;
@@ -188,6 +198,7 @@ const Tag = styled.div`
 
   &:hover {
     cursor: pointer;
+    color: ${({ theme }) => theme.colors.salmon};
   }
 `;
 

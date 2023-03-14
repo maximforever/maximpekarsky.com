@@ -1,10 +1,12 @@
 const lightModeTheme = {
   colors: {
-    black: "black",
-    white: "white",
-    blue: "blue",
-    salmon: "red",
-    lightGray: "#e5e5e5",
+    black: "#103038",
+    white: "#f8f5ec",
+    blue: "#108ddf",
+    salmon: "#F07167",
+    lightGray: "#c6c1b6",
+    veryLightGray: "#ebe6db",
+    washedOutBlack: "#eae1cb",
   },
   backupColors: {
     black: "#343434",
@@ -36,11 +38,13 @@ const lightModeTheme = {
 
 const darkModeTheme = {
   colors: {
-    black: "white",
-    white: "black",
-    blue: "blue",
-    salmon: "red",
-    lightGray: "#454545",
+    black: "#92b6e9",
+    white: "#05152e",
+    blue: "#1092ff",
+    salmon: "#F07167",
+    lightGray: "#30568b",
+    veryLightGray: "#0d2649",
+    washedOutBlack: "#1654ad",
   },
   backupColors: {
     black: "#343434",

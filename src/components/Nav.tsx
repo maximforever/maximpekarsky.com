@@ -1,4 +1,8 @@
-import { faBuilding, faCircleUser } from "@fortawesome/free-regular-svg-icons";
+import {
+  faBuilding,
+  faCircleUser,
+  faFilePdf,
+} from "@fortawesome/free-regular-svg-icons";
 import { faFeatherPointed, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageType } from "../types";
@@ -8,6 +12,10 @@ import styled from "styled-components/macro";
 const DesktopNav = styled.nav`
   display: none;
   padding: 1rem 0;
+
+  .fa-file-pdf {
+    padding-right: 0.5rem;
+  }
 
   @media only screen and (min-width: 768px) {
     display: flex;
@@ -47,8 +55,8 @@ const MobileNav = styled.nav<{ open: boolean }>`
 `;
 
 const NavItem = styled.div<{ active?: boolean }>`
-  font-weight: 600;
-  margin-right: 4rem;
+  font-weight: 700;
+  margin-right: 6rem;
   padding-bottom: 0.5rem;
   /* TODO: there's a transition bug with this color */
   color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
@@ -128,6 +136,7 @@ const Nav: React.FunctionComponent<NavProps> = ({
           Work
         </NavItem>
         <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFilePdf} />
           Resume
         </a>
       </DesktopNav>

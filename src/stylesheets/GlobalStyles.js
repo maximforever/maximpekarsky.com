@@ -12,6 +12,8 @@ const GlobalStylesheet = createGlobalStyle`
     color: ${({ theme }) => theme.colors.black};
     transition: color ${({ theme }) => theme.transitions.short};
     transition: background ${({ theme }) => theme.transitions.short};
+
+    font-weight: 500;
   }
 
   .preload {
@@ -29,7 +31,7 @@ const GlobalStylesheet = createGlobalStyle`
   }
 
   strong {
-    font-weight: 800;
+    font-weight: 700;
   }
 
   .App {

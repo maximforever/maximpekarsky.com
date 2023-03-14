@@ -12,7 +12,7 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   opacity: ${(props) => (props.open ? "1" : "0")};
   visibility: ${(props) => (props.open ? "visible" : "hidden")};
   max-width: ${(props) => (props.open ? "3rem" : "0rem")};
-  color: ${(props) => (props.darkMode ? "yellow" : "blue")};
+  color: ${(props) => (props.darkMode ? "#f6d36e" : "#055ca8")};
 
   transition-property: color, opacity, visibility, max-width;
   transition-duration: ${({ theme }) => theme.transitions.short};
@@ -22,8 +22,10 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   }
 
   &:hover {
+    padding-bottom: 0.3rem;
+    margin-top: -0.3rem;
     cursor: pointer;
-    color: red;
+    color: ${({ theme }) => theme.colors.salmon};
   }
 `;
 
@@ -37,8 +39,13 @@ const DarkModeToggle: React.FC<{
   };
 
   return (
-    <StyledDarkModeToggle id="dark-mode-toggle" darkMode={darkMode} open={open}>
-      <FontAwesomeIcon icon={renderIcon()} onClick={toggleDarkMode} />
+    <StyledDarkModeToggle
+      id="dark-mode-toggle"
+      onClick={toggleDarkMode}
+      darkMode={darkMode}
+      open={open}
+    >
+      <FontAwesomeIcon icon={renderIcon()} />
     </StyledDarkModeToggle>
   );
 };
