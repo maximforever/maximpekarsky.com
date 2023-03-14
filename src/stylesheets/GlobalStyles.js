@@ -1,4 +1,9 @@
 import { createGlobalStyle } from "styled-components";
+import one from "../assets/backgrounds/1.jpg";
+import two from "../assets/backgrounds/2.jpg";
+import three from "../assets/backgrounds/3.jpg";
+import four from "../assets/backgrounds/4.jpg";
+import five from "../assets/backgrounds/5.jpg";
 
 const GlobalStylesheet = createGlobalStyle`
   * {
@@ -9,6 +14,11 @@ const GlobalStylesheet = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${({ theme }) => theme.colors.white};
+    background: url(${five}) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     color: ${({ theme }) => theme.colors.black};
     transition: color ${({ theme }) => theme.transitions.short};
     transition: background ${({ theme }) => theme.transitions.short};
