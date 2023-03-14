@@ -9,7 +9,7 @@ import night_three from "../assets/backgrounds/night_3.jpg";
 import night_four from "../assets/backgrounds/night_4.jpg";
 
 const lightModeTheme = {
-  backgroundPhoto: day_two,
+  backgroundPhoto: day_five,
   colors: {
     black: "#103038",
     white: "#f8f5ec",

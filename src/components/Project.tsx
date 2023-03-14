@@ -61,6 +61,7 @@ const StyledProject = styled.div`
 
   @media only screen and (min-width: 768px) {
     padding-bottom: 9rem;
+    max-width: 1200px;
   }
 `;
 
@@ -147,11 +148,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Info = styled.div`
-  @media only screen and (min-width: 768px) {
-    max-width: 600px;
-  }
-`;
+const Info = styled.div``;
 
 const Wrapper = styled.div`
   display: flex;
