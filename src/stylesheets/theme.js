@@ -1,4 +1,15 @@
+import day_one from "../assets/backgrounds/day_1.jpg";
+import day_two from "../assets/backgrounds/day_2.jpg";
+import day_three from "../assets/backgrounds/day_3.jpg";
+import day_four from "../assets/backgrounds/day_4.jpg";
+import day_five from "../assets/backgrounds/day_5.jpg";
+import night_one from "../assets/backgrounds/night_1.jpg";
+import night_two from "../assets/backgrounds/night_2.jpg";
+import night_three from "../assets/backgrounds/night_3.jpg";
+import night_four from "../assets/backgrounds/night_4.jpg";
+
 const lightModeTheme = {
+  backgroundPhoto: day_two,
   colors: {
     black: "#103038",
     white: "#f8f5ec",
@@ -37,6 +48,7 @@ const lightModeTheme = {
 // unfortunately, for now, we need to manually keep the two themes synched.
 
 const darkModeTheme = {
+  backgroundPhoto: night_four,
   colors: {
     black: "#92b6e9",
     white: "#05152e",
