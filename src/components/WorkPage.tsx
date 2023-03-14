@@ -13,8 +13,11 @@ const WorkExperience = styled.div`
   }
 `;
 
+// this and other styles are duplicated in project.tsx
 const Title = styled.h2`
   margin: 0;
+  font-weight: 500;
+  font-size: 2.2rem;
 `;
 
 const Description = styled.div`
@@ -40,7 +43,6 @@ const WorkPage = () => {
   return (
     <MediumContainer>
       <WorkExperience>
-        <WorkLogo src={executeprogram} />
         <a
           href="https://executeprogram.com"
           target="_blank"
@@ -48,6 +50,7 @@ const WorkPage = () => {
         >
           <Title>Excecute Program</Title>
         </a>
+        <WorkLogo src={executeprogram} />
         <Description>
           <p>
             As a freelance software developer and curriculum developer for the
@@ -72,10 +75,10 @@ const WorkPage = () => {
       </WorkExperience>
 
       <WorkExperience>
-        <WorkLogo src={bonusly} />
         <a href="https://bonus.ly" target="_blank" rel="nofollow noreferrer">
           <Title>Bonus.ly</Title>
         </a>
+        <WorkLogo src={bonusly} />
         <Description>
           <p>
             Promoted to Engineer II after just a year, I worked on the core
@@ -110,20 +113,20 @@ const WorkPage = () => {
       </WorkExperience>
 
       <WorkExperience>
-        <WorkLogo src={nycopp} />
         <a
           href="https://www.nyc.gov/site/opportunity/portfolio/products.page"
           target="_blank"
           rel="nofollow noreferrer"
         >
-          <Title>NYC Mayor's Office for Economic Opportunity</Title>
+          <Title>NYC Mayor's Office</Title>
         </a>
+        <WorkLogo src={nycopp} />
         <Description>
           <p>
-            I completed a development apprenticeship at the NYC Mayor's Office.
-            Part of a small team of developers and product managers, I worked on
-            AccessNYC (a tool to match New Yorkers to city benefits) and
-            GrowingUpNYC (resources for city parents.)
+            I completed a development apprenticeship at the NYC Mayor's Office
+            for Economic Opportunity. Part of a small team of developers and
+            product managers, I worked on AccessNYC (a tool to match New Yorkers
+            to city benefits) and GrowingUpNYC (resources for city parents.)
           </p>
           <p>
             I worked closely with the product and neighborhood outreach team as
@@ -153,7 +156,6 @@ const WorkPage = () => {
       </WorkExperience>
 
       <WorkExperience>
-        <WorkLogo src={codecademy} />
         <a
           href="https://www.codecademy.com"
           target="_blank"
@@ -161,6 +163,7 @@ const WorkPage = () => {
         >
           <Title>Codecademy</Title>
         </a>
+        <WorkLogo src={codecademy} />
         <Description>
           <p>
             On the product team at Codecademy, I did whatever it took to enable

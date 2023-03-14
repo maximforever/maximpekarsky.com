@@ -11,7 +11,7 @@ import styled from "styled-components/macro";
 
 const DesktopNav = styled.nav`
   display: none;
-  padding: 1rem 0;
+  padding: 3rem 0;
 
   .fa-file-pdf {
     padding-right: 0.5rem;

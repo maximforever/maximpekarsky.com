@@ -5,14 +5,9 @@ import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components/macro";
 
 const StyledHeader = styled.header`
-  padding-bottom: 2rem;
   display: flex;
   user-select: none;
   justify-content: space-between;
-
-  @media only screen and (min-width: 768px) {
-    padding-bottom: 3rem;
-  }
 `;
 
 const HeadingWrapper = styled.div<{ open: boolean }>`
