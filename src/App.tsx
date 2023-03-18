@@ -19,6 +19,8 @@ import { ThemeProvider } from "styled-components";
 import WorkPage from "./components/WorkPage";
 import WritingPage from "./components/WritingPage";
 
+//import beachBackground from "../assets/beach_background.svg";
+
 function App() {
   const localStorageThemePreference = JSON.parse(
     localStorage.getItem("MaximPekarskyDarkMode") ?? "false"
@@ -89,6 +91,7 @@ function App() {
           {router()}
         </MainContent>
       </main>
+      <div className="beach-scene"></div>
     </ThemeProvider>
   );
 }

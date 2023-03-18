@@ -12,13 +12,15 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   opacity: ${(props) => (props.open ? "1" : "0")};
   visibility: ${(props) => (props.open ? "visible" : "hidden")};
   max-width: ${(props) => (props.open ? "3rem" : "0rem")};
-  color: ${(props) => (props.darkMode ? "#f6d36e" : "#055ca8")};
+  color: ${(props) => (props.darkMode ? "#f6d36e" : "#082c50")};
 
   transition-property: opacity, visibility, max-width;
   transition-duration: ${({ theme }) => theme.transitions.short};
 
   @media only screen and (min-width: 768px) {
-    padding-right: 7%;
+    padding-right: 5%;
+    min-width: 5rem;
+    text-align: center;
   }
 
   svg {

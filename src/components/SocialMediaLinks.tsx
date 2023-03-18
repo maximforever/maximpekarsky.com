@@ -26,9 +26,8 @@ const SocialMediaIcons = styled.div<{ open: boolean }>`
   }
 
   ${Icon} {
-    height: 4rem;
-    min-width: 4rem;
     display: flex;
+    min-width: 4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,7 +37,6 @@ const SocialMediaIcons = styled.div<{ open: boolean }>`
 
     @media only screen and (min-width: 768px) {
       justify-content: flex-start;
-      height: 5rem;
       min-width: 5rem;
       margin-top: 0;
     }

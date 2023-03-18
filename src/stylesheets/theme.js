@@ -8,8 +8,12 @@ import night_two from "../assets/backgrounds/night_2.jpg";
 import night_three from "../assets/backgrounds/night_3.jpg";
 import night_four from "../assets/backgrounds/night_4.jpg";
 
+import beach_background_day from "../assets/beach_background_day.svg";
+import beach_background_night from "../assets/beach_background_night.svg";
+
 const lightModeTheme = {
   backgroundPhoto: day_five,
+  beachBackground: beach_background_day,
   colors: {
     black: "#103038",
     white: "#f8f5ec",
@@ -49,6 +53,7 @@ const lightModeTheme = {
 
 const darkModeTheme = {
   backgroundPhoto: night_four,
+  beachBackground: beach_background_night,
   colors: {
     black: "#92b6e9",
     white: "#05152e",

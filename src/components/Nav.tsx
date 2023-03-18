@@ -64,7 +64,8 @@ const NavItem = styled.div<{ active?: boolean }>`
   font-weight: 600;
   padding-bottom: 0.5rem;
   /* TODO: there's a transition bug with this color */
-  color: ${(props) => (props.active ? props.theme.colors.salmon : "inherit")};
+  color: ${(props) =>
+    props.active ? props.theme.colors.salmon : props.theme.colors.lightGray};
   border-bottom: ${(props) =>
     props.active ? `3px solid ${props.theme.colors.salmon}` : "none"};
   user-select: none;
@@ -81,11 +82,13 @@ const NavItem = styled.div<{ active?: boolean }>`
   a {
     display: flex;
     flex-wrap: nowrap;
+    color: inherit !important;
   }
 
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.colors.salmon};
+    border-color: ${({ theme }) => theme.colors.salmon};
   }
 `;
 
@@ -100,6 +103,9 @@ const MobileNavItem = styled(NavItem)`
   width: 100%;
   padding: 0.3rem;
   font-size: 0.9rem;
+
+  color: ${(props) =>
+    props.active ? props.theme.colors.salmon : props.theme.colors.black};
 
   svg {
     font-size: 0.8rem;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="1 -70.071 687.042 431.523" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-0.532" y="184.37" width="689.407" height="30.248" style="fill: rgb(217, 234, 241);"/>
+  <rect x="0.356" y="164.115" width="688.545" height="20.454" style="fill: rgba(217, 234, 241, 0.87);"/>
+  <rect x="-0.511" y="141.157" width="688.961" height="22.786" style="fill: rgba(217, 234, 241, 0.62);"/>
+  <rect x="0.796" y="-69.254" width="502.31" height="156.915" style="fill: rgba(216, 216, 216, 0);"/>
+  <rect x="1.261" y="117.408" width="685.859" height="24.014" style="fill: rgba(217, 234, 241, 0.43);"/>
+  <ellipse style="fill: rgb(253, 255, 138);" cx="63.579" cy="6.798" rx="21.464" ry="21.464"/>
+  <ellipse style="fill: rgb(191, 222, 87);"/>
+  <rect x="-2.096" y="213.45" width="689.407" height="149.796" style="fill: rgb(244, 241, 231);"/>
+  <ellipse style="fill: rgb(246, 241, 223);" cx="231.644" cy="267.993" rx="411.047" ry="81.023"/>
+  <ellipse style="fill: rgb(242, 232, 195);" cx="517.648" cy="258.779" rx="231.28" ry="81.023"/>
+  <ellipse style="fill: rgb(241, 234, 207);" cx="476.247" cy="276.657" rx="411.047" ry="81.023"/>
+  <ellipse style="fill: rgb(242, 235, 205);" cx="274.622" cy="259.053" rx="231.28" ry="81.023"/>
+  <ellipse style="fill: rgb(238, 235, 225);" cx="346.327" cy="336.272" rx="411.047" ry="81.023"/>
+  <rect x="1.472" y="97.466" width="685.859" height="19.301" style="fill: rgba(217, 234, 241, 0.16);"/>
+  <rect x="1.472" y="79.228" width="685.859" height="18.096" style="fill: rgba(217, 234, 241, 0.09);"/>
+</svg>

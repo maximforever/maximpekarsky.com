@@ -1,8 +1,4 @@
 import { MediumContainer } from "./Containers";
-import bonusly from "../assets/project_images/work/bonusly.png";
-import codecademy from "../assets/project_images/work/codecademy.png";
-import executeprogram from "../assets/project_images/work/executeprogram.png";
-import nycopp from "../assets/project_images/work/nycopp.png";
 import styled from "styled-components/macro";
 
 const WorkExperience = styled.div`
@@ -20,10 +16,13 @@ const Title = styled.h2`
   font-size: 2.2rem;
 `;
 
-const Description = styled.div`
-  line-height: 1.5;
+const Description = styled.p`
+  line-height: 1.9;
+  margin: 0;
+  padding: 0.5rem 0;
 
-  p {
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -50,7 +49,6 @@ const WorkPage = () => {
         >
           <Title>Execute Program</Title>
         </a>
-        <WorkLogo src={executeprogram} />
         <Description>
           <p>
             As a freelance software developer and curriculum developer for the
@@ -78,7 +76,6 @@ const WorkPage = () => {
         <a href="https://bonus.ly" target="_blank" rel="nofollow noreferrer">
           <Title>Bonus.ly</Title>
         </a>
-        <WorkLogo src={bonusly} />
         <Description>
           <p>
             Promoted to Engineer II after just a year, I worked on the core
@@ -120,7 +117,6 @@ const WorkPage = () => {
         >
           <Title>NYC Mayor's Office</Title>
         </a>
-        <WorkLogo src={nycopp} />
         <Description>
           <p>
             I completed a development apprenticeship at the NYC Mayor's Office
@@ -163,7 +159,6 @@ const WorkPage = () => {
         >
           <Title>Codecademy</Title>
         </a>
-        <WorkLogo src={codecademy} />
         <Description>
           <p>
             On the product team at Codecademy, I did whatever it took to enable

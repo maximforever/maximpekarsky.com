@@ -51,10 +51,30 @@ const GlobalStylesheet = createGlobalStyle`
     width: 100%;
     padding: 5vw 5vw 10rem 5vw;
 
+    position: absolute;
+    z-index: 2;
+
     @media only screen and (min-width: 768px) {
       padding: 2rem 2rem 10rem 2rem;
       margin: 0;
     }
+  }
+  .beach-scene {
+    background: url(${({ theme }) =>
+      theme.beachBackground}) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+
+      background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    
+    opacity: 0.7;
   }
 `;
 
