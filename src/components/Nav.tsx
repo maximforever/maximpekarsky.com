@@ -88,7 +88,6 @@ const NavItem = styled.div<{ active?: boolean }>`
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.colors.salmon};
-    border-color: ${({ theme }) => theme.colors.salmon};
   }
 `;
 
