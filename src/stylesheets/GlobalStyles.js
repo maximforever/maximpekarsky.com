@@ -44,7 +44,9 @@ const GlobalStylesheet = createGlobalStyle`
     margin: 0 auto;
     max-width: 2000px;
 
-    min-height: 100vh;
+    // this max-height is preventing a nice folding animation, but making it 150vh
+    // hides the content
+    max-height: 1000vh;
     min-width: 350px;
     box-sizing: border-box;
     font-family: ${({ theme }) => theme.fonts.sansSerif};
@@ -67,13 +69,13 @@ const GlobalStylesheet = createGlobalStyle`
       -o-background-size: cover;
 
       background-size: cover;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     bottom: 0;
     left: 0;
     z-index: 0;
-    
+
     opacity: 0.7;
   }
 `;

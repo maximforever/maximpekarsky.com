@@ -108,7 +108,7 @@ const MobileNavItem = styled(NavItem)`
     props.active ? props.theme.colors.salmon : props.theme.colors.black};
 
   svg {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     padding-top: 0.5rem;
   }
 
