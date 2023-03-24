@@ -10,10 +10,13 @@ import night_four from "../assets/backgrounds/night_4.jpg";
 
 import beach_background_day from "../assets/beach_background_day.svg";
 import beach_background_night from "../assets/beach_background_night.svg";
+import beach_background_day_mobile from "../assets/beach_background_day.svg";
+import beach_background_night_mobile from "../assets/beach_background_night.svg";
 
 const lightModeTheme = {
   backgroundPhoto: day_five,
   beachBackground: beach_background_day,
+  beachBackgroundMobile: beach_background_day_mobile,
   colors: {
     black: "#103038",
     white: "#f8f5ec",
@@ -54,6 +57,7 @@ const lightModeTheme = {
 const darkModeTheme = {
   backgroundPhoto: night_four,
   beachBackground: beach_background_night,
+  beachBackgroundMobile: beach_background_night_mobile,
   colors: {
     black: "#92b6e9",
     white: "#05152e",
