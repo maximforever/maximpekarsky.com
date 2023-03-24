@@ -22,13 +22,8 @@ const StyledAboutMeText = styled.div`
       margin-top: 0;
     }
 
-    //font size scales with width between 768px and 1200px, then snaps to 1.6rem
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     width: 75%;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 1.6rem;
   }
 `;
 
