@@ -57,11 +57,12 @@ const GlobalStylesheet = createGlobalStyle`
     z-index: 2;
 
     @media only screen and (min-width: 768px) {
-      padding: 2rem 2rem 10rem 2rem;
+      padding: 2rem 2rem 0 2rem;
       margin: 0;
     }
   }
   .beach-scene {
+    // try for a mobile background here
     background: url(${({ theme }) =>
       theme.beachBackground}) no-repeat center center fixed;
       -webkit-background-size: cover;
@@ -77,6 +78,14 @@ const GlobalStylesheet = createGlobalStyle`
     z-index: 0;
 
     opacity: 0.7;
+    
+    @media only screen and (min-width: 768px) {
+      background: url(${({ theme }) =>
+        theme.beachBackground}) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
   }
 `;
 
