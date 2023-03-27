@@ -159,10 +159,16 @@ const Wrapper = styled.div`
   }
 `;
 
-const Title = styled.h2`
+const Title = styled.a`
   margin: 0;
   font-weight: 500;
   font-size: 1.3rem;
+  color: ${({ theme }) => theme.colors.black};
+
+  &:visited,
+  &:active {
+    color: ${({ theme }) => theme.colors.black};
+  }
 
   @media only screen and (min-width: 768px) {
     font-size: 2.2rem;
@@ -172,10 +178,9 @@ const Title = styled.h2`
 const Subtitle = styled.h3`
   margin: 0;
   padding: 0.5rem 0 1rem 0;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: ${({ theme }) => theme.colors.lightGray};
-  text-transform: uppercase;
 `;
 
 const Description = styled.p`
@@ -237,9 +242,9 @@ const Project: React.FunctionComponent<{ project: ProjectType }> = ({
           </a>
         )}
         <Info>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <Title>{project.title}</Title>
-          </a>
+          <Title href={project.link} target="_blank" rel="noopener noreferrer">
+            {project.title}
+          </Title>
           {project.subtitle && <Subtitle>{project.subtitle}</Subtitle>}
           <Description
             dangerouslySetInnerHTML={{ __html: project.description }}
