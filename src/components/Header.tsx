@@ -55,7 +55,8 @@ const Subheading = styled.h2<{ open: boolean }>`
 
 const StyledFinger = styled.div<{ open: boolean }>`
   font-size: 1.6rem;
-  color: ${({ theme }) => (theme.darkMode ? "#0a415b" : "#dedede")};
+  color: ${(props) =>
+    props.theme.darkMode ? props.theme.colors.lightGray : "#6991b1"};
   padding-top: 1rem;
   text-align: center;
   visibility: ${(props) => (props.open ? "hidden" : "visible")};
