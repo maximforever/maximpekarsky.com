@@ -1,4 +1,5 @@
 import { ProjectType } from "../types";
+import StyledTag from "./StyledTag";
 import flipper from "../assets/project_images/projects/flipper.gif";
 import flipperStatic from "../assets/project_images/projects/flipper.png";
 import gemfm from "../assets/project_images/projects/gemfm.gif";
@@ -199,32 +200,28 @@ const TagWrapper = styled.div`
   margin: 1rem 0;
 `;
 
-const Tag = styled.div`
-  font-family: "Source Code Pro", monospace;
-  padding: 0.2rem 1.4rem;
-  background: ${({ theme }) => theme.colors.veryLightGray};
-  color: ${({ theme }) => theme.colors.blue};
-  font-size: 0.85rem;
-  font-weight: 600;
-  border-radius: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 0.8rem;
+const Project: React.FunctionComponent<{
+  project: ProjectType;
+  toggleFilter?: (arg0: string) => void;
+}> = ({ project, toggleFilter }) => {
+  const handleTagClick = (tag: string) => {
+    if (toggleFilter !== undefined) {
+      toggleFilter(tag);
+    }
+  };
 
-  &:hover {
-    cursor: pointer;
-    color: ${({ theme }) => theme.colors.salmon};
-  }
-`;
-
-const Project: React.FunctionComponent<{ project: ProjectType }> = ({
-  project,
-}) => {
   const renderStackTags = () => {
     if (project.stack === undefined) {
       return null;
     }
 
-    const tagHTML = project.stack.map((tag) => <Tag key={tag}>{tag}</Tag>);
+    const tagHTML = project.stack.map((tag) => {
+      return (
+        <StyledTag key={tag} onClick={() => handleTagClick(tag)}>
+          {tag}
+        </StyledTag>
+      );
+    });
 
     return <TagWrapper>{tagHTML}</TagWrapper>;
   };
