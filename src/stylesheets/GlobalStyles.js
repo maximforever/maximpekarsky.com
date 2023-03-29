@@ -77,7 +77,7 @@ const GlobalStylesheet = createGlobalStyle`
     left: 0;
     z-index: 0;
 
-    opacity: 0.7;
+    opacity: 0.5;
     
     @media only screen and (min-width: 768px) {
       background: url(${({ theme }) =>

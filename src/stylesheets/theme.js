@@ -25,6 +25,7 @@ const lightModeTheme = {
     lightGray: "#c6c1b6",
     veryLightGray: "#ebe6db",
     washedOutBlack: "#eae1cb",
+    accentedWhite: "#fffefc",
   },
   backupColors: {
     black: "#343434",
@@ -66,6 +67,7 @@ const darkModeTheme = {
     lightGray: "#30568b",
     veryLightGray: "#0d2649",
     washedOutBlack: "#1654ad",
+    accentedWhite: "#10315f",
   },
   backupColors: {
     black: "#343434",

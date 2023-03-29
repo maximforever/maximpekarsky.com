@@ -160,15 +160,15 @@ const Wrapper = styled.div`
   }
 `;
 
-const Title = styled.a`
+const Title = styled.h2`
   margin: 0;
   font-weight: 500;
   font-size: 1.3rem;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.blue};
 
   &:visited,
   &:active {
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.blue};
   }
 
   @media only screen and (min-width: 768px) {
@@ -181,7 +181,20 @@ const Subtitle = styled.h3`
   padding: 0.5rem 0 1rem 0;
   font-size: 1.2rem;
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.lightGray};
+  color: ${({ theme }) => theme.colors.black};
+`;
+
+const TitleWrapper = styled.a`
+  &:hover {
+    > * {
+      color: ${({ theme }) => theme.colors.salmon};
+      cursor: pointer;
+    }
+
+    > ${Subtitle} {
+      color: ${({ theme }) => theme.colors.salmon};
+    }
+  }
 `;
 
 const Description = styled.p`
@@ -239,10 +252,14 @@ const Project: React.FunctionComponent<{
           </a>
         )}
         <Info>
-          <Title href={project.link} target="_blank" rel="noopener noreferrer">
-            {project.title}
-          </Title>
-          {project.subtitle && <Subtitle>{project.subtitle}</Subtitle>}
+          <TitleWrapper
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Title>{project.title}</Title>
+            {project.subtitle && <Subtitle>{project.subtitle}</Subtitle>}
+          </TitleWrapper>
           <Description
             dangerouslySetInnerHTML={{ __html: project.description }}
           ></Description>

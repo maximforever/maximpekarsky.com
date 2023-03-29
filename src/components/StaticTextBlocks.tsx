@@ -5,15 +5,15 @@ export const AboutMeText = () => (
       I am currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
       In the past, I worked on engineering and product teams at 
       <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>,{" "}
-      <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, the{" "}
-      <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office</a>,{" "}
-      and <a href="https://indiegogo.com" target="_blank" rel="nofollow noreferrer">Indiegogo</a>.
+      <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, and the{" "}
+      <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office.</a>{" "}
+      I attended the <a href="https://recurse.com" target="blank" rel="nofollow noreferrer">Recurse Center</a> in 2019 and can't recommend it enough.
     </p>
     <p>
-      In addition to my engineering work, I love being involved with my team&apos;s learning and development, developer experience, and hiring process.
+      In addition to my engineering work, I am involved in learning and development, internal tooling, and hiring process.
     </p>
     <p>
-      When I&apos;m not coding for work, I&apos;m always building the next cool thing. My latest projects are <a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms, and <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">Tiny Logger</a>, a minimal blogging platform.
+      Outside of work, I&apos;m always building the next cool thing. My latest projects are <a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms, and <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">Tiny Logger</a>, a minimal blogging platform.      
     </p>
   </>
 )

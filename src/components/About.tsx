@@ -22,7 +22,7 @@ const StyledAboutMeText = styled.div`
       margin-top: 0;
     }
 
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     width: 75%;
   }
 `;
