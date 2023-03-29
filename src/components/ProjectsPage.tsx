@@ -14,8 +14,23 @@ const ProjectList = styled.div`
   justify-content: space-between;
 `;
 
+const FilterSectionHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const CloseFilter = styled.div`
+  font-size: 2rem;
+  color: ${({ theme }) => theme.colors.blue};
+
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.colors.salmon};
+  }
+`;
+
 const FilterSection = styled.div`
-  display: table;
   padding: 1rem 1rem 0 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -41,19 +56,18 @@ const TagWrapper = styled.div`
 
 const ProjectsPage = () => {
   const [filters, setFilters] = useState<string[]>([]);
-
   let filteredProjects;
 
+  // TODO: pull this filtering logic out of this file
   if (!filters.length) {
     filteredProjects = projects;
   } else {
     filteredProjects = projects.filter((project) => {
-      let includeProject = false;
+      let includeProject = true;
 
-      for (const tag of project.stack) {
-        if (filters.includes(tag)) {
-          console.log(`${project.title} filters include ${tag}`);
-          includeProject = true;
+      for (const filter of filters) {
+        if (!project.stack.includes(filter)) {
+          includeProject = false;
         }
       }
 
@@ -77,14 +91,30 @@ const ProjectsPage = () => {
     />
   ));
 
+  const resetFilters = () => {
+    setFilters([]);
+  };
+
   const renderFilters = () => {
     if (!filters.length) {
       return null;
     }
 
+    const projectCount: number = filteredProjects.length;
+
+    const filterLabel =
+      projectCount === 1
+        ? `Showing ${projectCount} project that uses`
+        : `Showing ${projectCount} projects that use`;
+
     return (
       <FilterSection>
-        Only showing projects that use:
+        <FilterSectionHeader>
+          {filterLabel}
+          <CloseFilter>
+            <FontAwesomeIcon icon={faXmark} onClick={() => resetFilters()} />
+          </CloseFilter>
+        </FilterSectionHeader>
         <TagWrapper>
           {filters.map((tag) => (
             <StyledTag key={tag} onClick={() => toggleFilter(tag)}>
