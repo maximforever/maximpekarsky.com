@@ -1,10 +1,16 @@
 import styled from "styled-components/macro";
 
-const StyledTag = styled.div`
+const StyledTag = styled.div<{ active?: boolean }>`
   font-family: "Source Code Pro", monospace;
   padding: 0.2rem 1.4rem;
-  background: ${({ theme }) => theme.colors.accentedWhite};
-  color: ${({ theme }) => theme.colors.blue};
+  background: ${(props) =>
+    props.active !== undefined && props.active
+      ? props.theme.colors.blue
+      : props.theme.colors.accentedWhite};
+  color: ${(props) =>
+    props.active !== undefined && props.active
+      ? props.theme.colors.accentedWhite
+      : props.theme.colors.blue};
   font-size: 0.85rem;
   font-weight: 600;
   border-radius: 1rem;
@@ -16,7 +22,10 @@ const StyledTag = styled.div`
 
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.salmon};
+    color: ${(props) =>
+      props.active !== undefined && props.active
+        ? props.theme.colors.black
+        : props.theme.colors.salmon};
   }
 `;
 

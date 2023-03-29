@@ -81,6 +81,8 @@ const ProjectsPage = () => {
     } else {
       setFilters(filters.concat(newFilter));
     }
+
+    window.scrollTo(0, 0);
   };
 
   const projectHTML = filteredProjects.map((project: ProjectType) => (
@@ -88,6 +90,7 @@ const ProjectsPage = () => {
       key={project.title}
       project={project}
       toggleFilter={toggleFilter}
+      filters={filters}
     />
   ));
 
@@ -117,7 +120,11 @@ const ProjectsPage = () => {
         </FilterSectionHeader>
         <TagWrapper>
           {filters.map((tag) => (
-            <StyledTag key={tag} onClick={() => toggleFilter(tag)}>
+            <StyledTag
+              key={tag}
+              active={filters.includes(tag)}
+              onClick={() => toggleFilter(tag)}
+            >
               {tag}
               <FontAwesomeIcon icon={faXmark} />
             </StyledTag>

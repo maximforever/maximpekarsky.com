@@ -216,7 +216,8 @@ const TagWrapper = styled.div`
 const Project: React.FunctionComponent<{
   project: ProjectType;
   toggleFilter?: (arg0: string) => void;
-}> = ({ project, toggleFilter }) => {
+  filters?: string[];
+}> = ({ project, toggleFilter, filters }) => {
   const handleTagClick = (tag: string) => {
     if (toggleFilter !== undefined) {
       toggleFilter(tag);
@@ -230,7 +231,11 @@ const Project: React.FunctionComponent<{
 
     const tagHTML = project.stack.map((tag) => {
       return (
-        <StyledTag key={tag} onClick={() => handleTagClick(tag)}>
+        <StyledTag
+          key={tag}
+          active={filters !== undefined && filters.includes(tag)}
+          onClick={() => handleTagClick(tag)}
+        >
           {tag}
         </StyledTag>
       );

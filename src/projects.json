@@ -9,6 +9,7 @@
       "Node.js",
       "Express",
       "jQuery",
+      "JavaScript",
       "Handlebars.js",
       "MongoDB",
       "SASS",
@@ -25,6 +26,7 @@
       "Rails",
       "React.js",
       "TypeScript",
+      "JavaScript",
       "Redux",
       "styled-components",
       "PostgreSQL"
@@ -36,7 +38,7 @@
     "link": "https://www.tinylogger.com",
     "description": "TinyLogger is a minimal, distraction-free blogging platform. The minimal interface auto-saves, cleverly hides distractions, and focuses the user on writing.",
     "imageTitle": "tinylogger",
-    "stack": ["Node.js", "Express", "Vue.js", "MongoDB"]
+    "stack": ["Node.js", "Express", "Vue.js", "MongoDB", "JavaScript"]
   },
   {
     "title": "Trakr",
@@ -44,15 +46,22 @@
     "link": "https://www.mytrakr.app",
     "description": "Named after a heroic 9/11 dog, Trakr is a personal budgeting app. Users can enter and tag expenses, review a monthly dashboard, and see charts and graphs of their spending analytics.",
     "imageTitle": "trakr",
-    "stack": ["Rails", "React.js", "OAuth", "Victory Charts", "PostgreSQL"]
+    "stack": [
+      "Rails",
+      "React.js",
+      "OAuth",
+      "Victory Charts",
+      "PostgreSQL",
+      "JavaScript"
+    ]
   },
   {
     "title": "MaximPekarsky.com",
     "subtitle": "Check out this Max guy",
     "link": "/",
-    "description": "This portfolio is built with server-side rendered React.js, TypeScript, and styled-components",
+    "description": "This portfolio is built with React.js, TypeScript, and styled-components. It's hosted as a static site on Firebase.",
     "imageTitle": "maximpekarsky",
-    "stack": ["React.js", "TypeScript", "styled-components"]
+    "stack": ["React.js", "TypeScript", "styled-components", "JavaScript"]
   },
   {
     "title": "Space Squares!",
