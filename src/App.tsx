@@ -6,6 +6,7 @@ import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/source-code-pro/500.css";
 
+import { Moon, Sun } from "./components/CelestialBodies";
 import { darkModeTheme, lightModeTheme } from "./stylesheets/theme";
 import { useEffect, useState } from "react";
 import About from "./components/About";
@@ -92,6 +93,8 @@ function App() {
         </MainContent>
       </main>
       <div className="beach-scene"></div>
+      <Moon />
+      <Sun />
     </ThemeProvider>
   );
 }

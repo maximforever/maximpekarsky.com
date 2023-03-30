@@ -54,7 +54,7 @@ const GlobalStylesheet = createGlobalStyle`
     padding: 5vw 5vw 10rem 5vw;
 
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 
     @media only screen and (min-width: 768px) {
       padding: 2rem 2rem 0 2rem;
@@ -69,16 +69,19 @@ const GlobalStylesheet = createGlobalStyle`
       -moz-background-size: cover;
       -o-background-size: cover;
 
-      background-size: cover;
+    background-size: cover;
     position: fixed;
     height: 100vh;
     width: 100vw;
     bottom: 0;
     left: 0;
-    z-index: 0;
+    z-index: 2;
 
     opacity: 0.5;
-    
+    /* filter: brightness(${({ theme }) => (theme.darkMode ? 0.5 : 1)};)
+    transition-property: filter;
+    transition-duration: ${({ theme }) => theme.transitions.long}; */
+
     @media only screen and (min-width: 768px) {
       background: url(${({ theme }) =>
         theme.beachBackground}) no-repeat center center fixed;
@@ -87,6 +90,31 @@ const GlobalStylesheet = createGlobalStyle`
       -o-background-size: cover;
     }
   }
-`;
 
+  .celestial-body {
+    background: url(${({ theme }) =>
+      theme.celestialBody}) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    width: 13vh;
+    height: 13vh;
+    position: absolute;
+    top: ${({ theme }) => (theme.darkMode ? "21vh" : "10vh")};
+    left: ${({ theme }) => (theme.darkMode ? "79vw" : "10vw")};
+    z-index: 1;
+  }
+
+  .sun {
+    background: url(${({ theme }) => theme.sun}) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    width: 13vh;
+    height: 13vh;
+    position: absolute;
+    top: "21vh";
+    left: "79vw";
+  }
+`;
 export default GlobalStylesheet;

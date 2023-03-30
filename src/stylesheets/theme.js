@@ -12,9 +12,15 @@ import beach_background_day from "../assets/beach_background_day.svg";
 import beach_background_night from "../assets/beach_background_night.svg";
 import beach_background_day_mobile from "../assets/beach_background_day.svg";
 import beach_background_night_mobile from "../assets/beach_background_night.svg";
+import sun from "../assets/sun.svg";
+import moon from "../assets/moon.svg";
 
 const lightModeTheme = {
+  darkMode: false,
   backgroundPhoto: day_five,
+  celestialBody: sun,
+  sun: sun,
+  moon: moon,
   beachBackground: beach_background_day,
   beachBackgroundMobile: beach_background_day_mobile,
   colors: {
@@ -56,7 +62,11 @@ const lightModeTheme = {
 // unfortunately, for now, we need to manually keep the two themes synched.
 
 const darkModeTheme = {
+  darkMode: true,
   backgroundPhoto: night_four,
+  celestialBody: moon,
+  sun: sun,
+  moon: moon,
   beachBackground: beach_background_night,
   beachBackgroundMobile: beach_background_night_mobile,
   colors: {
