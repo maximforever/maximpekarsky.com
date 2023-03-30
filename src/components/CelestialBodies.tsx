@@ -1,9 +1,7 @@
 import styled from "styled-components/macro";
-import sun from "../assets/sun.svg";
-import moon from "../assets/moon.svg";
 
 export const Sun = styled.div`
-  background: url(${sun}) no-repeat center center;
+  background: url(${({ theme }) => theme.sun}) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,7 +20,7 @@ export const Sun = styled.div`
 `;
 
 export const Moon = styled.div`
-  background: url(${moon}) no-repeat center center;
+  background: url(${({ theme }) => theme.moon}) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

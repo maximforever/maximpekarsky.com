@@ -7,7 +7,7 @@ import "@fontsource/montserrat/700.css";
 import "@fontsource/source-code-pro/500.css";
 
 import { Moon, Sun } from "./components/CelestialBodies";
-import { darkModeTheme, lightModeTheme } from "./stylesheets/theme";
+import { darkModeTheme, lightModeTheme, mainTheme } from "./stylesheets/theme";
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import GlobalStylesheet from "./stylesheets/GlobalStyles";
@@ -77,9 +77,15 @@ function App() {
     }
   };
 
+  const getTheme = () => {
+    return darkMode
+      ? { ...mainTheme, ...darkModeTheme }
+      : { ...mainTheme, ...lightModeTheme };
+  };
+
   return (
-    <ThemeProvider theme={darkMode ? darkModeTheme : lightModeTheme}>
-      <GlobalStylesheet theme={darkMode ? darkModeTheme : lightModeTheme} />
+    <ThemeProvider theme={getTheme()}>
+      <GlobalStylesheet theme={getTheme()} />
       <main className="App">
         <Header
           open={appIsOpen}
