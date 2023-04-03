@@ -35,7 +35,7 @@ const lightModeTheme = {
     salmon: "#F07167",
     lightGray: "#c6c1b6",
     veryLightGray: "#ebe6db",
-    washedOutBlack: "#eae1cb",
+    washedOutBlack: "#a59264",
     accentedWhite: "#fffefc",
   },
 };

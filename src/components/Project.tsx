@@ -21,6 +21,7 @@ import traffic from "../assets/project_images/projects/traffic.gif";
 import trafficStatic from "../assets/project_images/projects/traffic.png";
 import trakr from "../assets/project_images/projects/trakr.gif";
 import trakrStatic from "../assets/project_images/projects/trakr.png";
+import { useState } from "react";
 import wordsync from "../assets/project_images/projects/wordsync.gif";
 import wordsyncStatic from "../assets/project_images/projects/wordsync.png";
 import wtfistoday from "../assets/project_images/projects/wtfistoday.gif";
@@ -126,25 +127,26 @@ const ImageOverlay = styled.div`
   }
 `;
 
-const ImageWrapper = styled.div`
+const ImageWrapper = styled.div<{ hover: boolean }>`
   position: relative;
 
   @media only screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 3rem;
 
+    // on Desktop, the gif has two overlays: a static image, and a black opaque div.
+    // This makes both invisible (the transition lives on ImageOverlay)
+
+    ${StaticImage} {
+      opacity: ${(props) => (props.hover ? 0 : 1)};
+    }
+
+    ${ImageOverlay} {
+      opacity: ${(props) => (props.hover ? 0 : 0.2)};
+    }
+
     &:hover {
       cursor: pointer;
-
-      // on Desktop, the gif has two overlays: a static image, and a black opaque div.
-      // This makes both invisible (the transition lives on ImageOverlay)
-      ${StaticImage} {
-        opacity: 0;
-      }
-
-      ${ImageOverlay} {
-        opacity: 0;
-      }
     }
   }
 `;
@@ -224,6 +226,8 @@ const Project: React.FunctionComponent<{
     }
   };
 
+  const [hover, setHover] = useState<boolean>(false);
+
   const renderStackTags = () => {
     if (project.stack === undefined) {
       return null;
@@ -245,11 +249,14 @@ const Project: React.FunctionComponent<{
   };
 
   return (
-    <StyledProject>
+    <StyledProject
+      onMouseOver={() => setHover(true)}
+      onMouseOut={() => setHover(false)}
+    >
       <Wrapper>
         {project.imageTitle && (
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <ImageWrapper>
+            <ImageWrapper hover={hover}>
               <StyledGif gifPath={gifPaths[project.imageTitle]} />
               <StaticImage imagePath={imagePaths[project.imageTitle]} />
               <ImageOverlay />

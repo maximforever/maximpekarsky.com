@@ -6,8 +6,7 @@
     "description": "I built Hackterms to be able to quickly look up programming terms without going down a rabbit hole of tutorials and arguments. I grew it to 1300 definitions from over a thousand contributors.",
     "imageTitle": "hackterms",
     "stack": [
-      "Node.js",
-      "Express",
+      "Node.js/Express",
       "jQuery",
       "JavaScript",
       "Handlebars.js",
@@ -38,7 +37,14 @@
     "link": "https://www.tinylogger.com",
     "description": "TinyLogger is a minimal, distraction-free blogging platform. The minimal interface auto-saves, cleverly hides distractions, and focuses the user on writing.",
     "imageTitle": "tinylogger",
-    "stack": ["Node.js", "Express", "Vue.js", "MongoDB", "JavaScript"]
+    "stack": [
+      "Node.js/Express",
+      "React.js",
+      "JavaScript",
+      "TypeScript",
+      "MongoDB",
+      "SCSS"
+    ]
   },
   {
     "title": "Trakr",
@@ -78,8 +84,7 @@
     "description": "A sockets.io powered Node/Express/MongoDB game that challenges two players to think of the same word at the same time?",
     "imageTitle": "wordsync",
     "stack": [
-      "Node.js",
-      "Express",
+      "Node.js/Express",
       "MongoDB",
       "Websockets",
       "HTML/CSS",
