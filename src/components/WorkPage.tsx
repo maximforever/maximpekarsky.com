@@ -51,22 +51,23 @@ const WorkPage = () => {
         </a>
         <Description>
           <p>
-            As a freelance software developer and curriculum developer for the
-            Execute Program platform, I was responsible for
+            As a freelance software and curriculum developer for the Execute
+            Program platform, I worked on the complete technical edit of the
+            curriculum and contributed to feature development.
           </p>
           <strong>Accomplishments</strong>
           <ul>
             <li>
-              Completed and end-to-end technical edit of the Execute Program
+              Completed end-to-end technical edit of the Execute Program
               curriculum.
             </li>
             <li>
-              Pioneered the use of integration testing by implementing
-              Cypress.js, documenting workflow.
+              Authored 200+ technical exercises and 10+ original lessons on
+              TypeScript, modern JS, RegEx, and SQL.
             </li>
             <li>
-              Developed SFTP integrations for HR tools, expanded API endpoints
-              to provide secure, sanitized user data.
+              Helped develop website navbar, consistent button component, lesson
+              reference sidebar.
             </li>
           </ul>
         </Description>
