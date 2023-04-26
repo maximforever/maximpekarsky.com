@@ -53,6 +53,7 @@ const WorkPage = () => {
           <p>
             As a freelance software and curriculum developer for the Execute
             Program platform, I worked on the complete technical edit of the
+            platform curriculum (focusing on TypeScript and ES6+ JavaScript)
             curriculum and contributed to feature development.
           </p>
           <strong>Accomplishments</strong>
