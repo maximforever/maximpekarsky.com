@@ -32,9 +32,10 @@ const WorkLogo = styled.img`
 
 const Tech = styled.span`
   padding: 0.2rem 0.4rem;
-  background: ${({ theme }) => theme.colors.lightGray};
-  font-size: 0.8rem;
-  font-weight: 600;
+  background: ${({ theme }) => theme.colors.tagWhite};
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: monospace;
   border-radius: 0.2rem;
 `;
 
@@ -53,7 +54,8 @@ const WorkPage = () => {
           <p>
             As a freelance software and curriculum developer for the Execute
             Program platform, I worked on the complete technical edit of the
-            platform curriculum (focusing on TypeScript and ES6+ JavaScript) and
+            platform curriculum (focusing on <Tech>TypeScript</Tech>,{" "}
+            <Tech>Python</Tech>, and Modern <Tech>JavaScript</Tech>) and
             contributed to end-to-end feature development.
           </p>
           <strong>Accomplishments</strong>
@@ -63,12 +65,48 @@ const WorkPage = () => {
               curriculum.
             </li>
             <li>
-              Authored 200+ technical exercises and 10+ original lessons on
-              TypeScript, modern JS, RegEx, and SQL.
+              Authored 200+ technical exercises and 20+ original lessons on{" "}
+              <Tech>TypeScript</Tech>, <Tech>modern JS</Tech>,{" "}
+              <Tech>RegEx</Tech>, and <Tech>SQL</Tech>.
             </li>
             <li>
               Helped develop website navbar, consistent button component, lesson
               reference sidebar.
+            </li>
+          </ul>
+        </Description>
+      </WorkExperience>
+
+      <WorkExperience>
+        <a
+          href="https://activestewardship.org/"
+          target="_blank"
+          rel="nofollow noreferrer"
+        >
+          <Title>Center For Active Stewardship</Title>
+        </a>
+        <Description>
+          <p>
+            CAS brought me on to develop a complete, performant UI to help asset
+            managers analyze, visualize, and make environmentally responsible
+            investment decisions from millions of rows of regulatory and
+            financial data.
+          </p>
+          <strong>Accomplishments</strong>
+          <ul>
+            <li>
+              Designed, developed, and deployed a complete front end for a data
+              portal enabling asset managers to query and visualize millions of
+              rows of financial and regulatory data with <Tech>React</Tech>/
+              <Tech>Next.js</Tech>,<Tech>TypeScript</Tech>,{" "}
+              <Tech>Tailwind</Tech>, and <Tech>Chart.js</Tech>.
+            </li>
+            <li>
+              Engineered a robust UI with dynamic visualizations and custom
+              table controls on top of multiple rapidly evolving data sources;
+              collaborated with data and back-end engineers to finalize API and
+              data shape through caching, virtualization, and intuitive
+              filtering, sorting, and toggling.
             </li>
           </ul>
         </Description>

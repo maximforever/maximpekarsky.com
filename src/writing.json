@@ -8,6 +8,12 @@
   {
     "title": "Coding 102: Writing code other people can read",
     "subtitle": "StackOverflow Blog",
+    "link": "https://stackoverflow.blog/2024/05/22/you-should-keep-a-developer-s-journal/",
+    "description": "Writing as you code will make you a better developer - and it might get you promoted."
+  },
+  {
+    "title": "Coding 102: Writing code other people can read",
+    "subtitle": "StackOverflow Blog",
     "link": "https://stackoverflow.blog/2023/02/13/coding-102-writing-code-other-people-can-read/",
     "description": "You can hack together syntax. Now it's time to write code your coworkers can read! An introduction to writing clean code for self-taught developers."
   },

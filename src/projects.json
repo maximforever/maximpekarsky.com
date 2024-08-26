@@ -1,18 +1,17 @@
 [
   {
-    "title": "Hackterms",
-    "subtitle": "Urban Dictionary for programming terms",
-    "link": "https://www.hackterms.com",
-    "description": "I built Hackterms to be able to quickly look up programming terms without going down a rabbit hole of tutorials and arguments. I grew it to 1300 definitions from over a thousand contributors.",
-    "imageTitle": "hackterms",
+    "title": "TinyLogger",
+    "subtitle": "A minimal blogging platform for focused writers",
+    "link": "https://www.tinylogger.com",
+    "description": "TinyLogger is a minimal, distraction-free blogging platform that helps you develop a writing habit. All the features you expect (auto-save, draft stages, focus mode) with none of the clutter or distraction.",
+    "imageTitle": "tinylogger",
     "stack": [
       "Node.js/Express",
-      "jQuery",
+      "React.js",
       "JavaScript",
-      "Handlebars.js",
+      "TypeScript",
       "MongoDB",
-      "SASS",
-      "OAuth"
+      "SCSS"
     ]
   },
   {
@@ -32,18 +31,19 @@
     ]
   },
   {
-    "title": "TinyLogger",
-    "subtitle": "A minimal blogging platform for focused writers",
-    "link": "https://www.tinylogger.com",
-    "description": "TinyLogger is a minimal, distraction-free blogging platform. The minimal interface auto-saves, cleverly hides distractions, and focuses the user on writing.",
-    "imageTitle": "tinylogger",
+    "title": "Hackterms",
+    "subtitle": "Urban Dictionary for programming terms",
+    "link": "https://www.hackterms.com",
+    "description": "I built Hackterms to be able to quickly look up programming terms without going down a rabbit hole of tutorials and arguments. I grew it to 1300 definitions from over a thousand contributors.",
+    "imageTitle": "hackterms",
     "stack": [
       "Node.js/Express",
-      "React.js",
+      "jQuery",
       "JavaScript",
-      "TypeScript",
+      "Handlebars.js",
       "MongoDB",
-      "SCSS"
+      "SASS",
+      "OAuth"
     ]
   },
   {
