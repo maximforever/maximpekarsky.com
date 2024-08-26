@@ -1,14 +1,15 @@
 export const AboutMeText = () => (
   <>
     <p>
-      I&apos;m a product-driven, senior full-stack web developer, specializing in intuitive data-driven UIs, and  front-end performance and architecture.
-      I feel equally comfortable prototyping a new interface or building on top a legacy application.
-      In addition to my engineering work, I am involved in learning and development, internal tooling, and hiring.
-      I also teach and write.
+      I&apos;m a product-driven senior full-stack web developer, specializing in intuitive data-driven UIs, and front-end performance and architecture.
+      I feel equally comfortable prototyping a new interface or developing new features for a legacy application.
+      I'm involved in team learning and development, internal tooling, and hiring.
+      I also regularly teach and write.
     </p>
     <p>
-      I&apos;m currently freelancing, helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
+      I&apos;m currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
       In the past, I worked on engineering and product teams at 
+      <a href="https://www.activestewardship.org" target="_blank" rel="nofollow noreferrer"> CAS</a>,{" "}
       <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>,{" "}
       <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, and the{" "}
       <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office.</a>{" "}

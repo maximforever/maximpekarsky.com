@@ -16,6 +16,4 @@ This is the version 3 of [my personal portfolio](www.https://maximpekarsky.com).
 
 ## Deploy
 
-Build the static site with `npm build`.
-I then deploy this to firebase.
 `npm run deploy` to build and deploy the site.
