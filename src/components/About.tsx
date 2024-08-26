@@ -14,6 +14,7 @@ const AboutWrapper = styled.div`
 const StyledAboutMeText = styled.div`
   font-weight: 400;
   line-height: 1.9;
+  max-width: 1800px;
 
   @media only screen and (min-width: 768px) {
     padding-top: 0;
@@ -22,7 +23,7 @@ const StyledAboutMeText = styled.div`
       margin-top: 0;
     }
 
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     width: 75%;
   }
 `;

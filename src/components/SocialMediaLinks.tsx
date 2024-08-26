@@ -12,7 +12,7 @@ const SocialMediaIcons = styled.div<{ open: boolean }>`
   padding-top: 1rem;
 
   overflow-y: hidden;
-  max-height: ${(props) => (props.open ? "40rem" : "3rem")};
+  //max-height: ${(props) => (props.open ? "40rem" : "3rem")};
   transition-property: max-height;
   transition-duration: ${({ theme }) => theme.transitions.long};
 
@@ -50,21 +50,21 @@ const SocialMediaIcons = styled.div<{ open: boolean }>`
 
       @media only screen and (min-width: 768px) {
         //font size scales with width between 768px and 1200px, then snaps to 1.6rem
-        font-size: 3.3vw;
+        font-size: 3vw;
       }
 
       @media only screen and (min-width: 1200px) {
-        font-size: 3rem;
+        font-size: 5vh;
       }
     }
 
     span {
-      font-size: 0.8rem;
+      font-size: 2vh;
       padding-top: 0.2rem;
       font-weight: 500;
 
       @media only screen and (min-width: 768px) {
-        font-size: 1rem;
+        font-size: 1.6vh;
       }
     }
   }

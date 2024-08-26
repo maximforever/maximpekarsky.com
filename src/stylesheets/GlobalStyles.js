@@ -42,7 +42,7 @@ const GlobalStylesheet = createGlobalStyle`
 
   .App {
     margin: 0 auto;
-    max-width: 2000px;
+    //max-width: 2000px;
 
     // this max-height is preventing a nice folding animation, but making it 150vh
     // hides the content

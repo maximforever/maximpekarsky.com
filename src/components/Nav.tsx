@@ -12,8 +12,7 @@ import styled from "styled-components/macro";
 const DesktopNav = styled.nav`
   display: none;
   padding: 3rem 0 5vw 0;
-  width: 80%;
-  max-width: 1000px;
+  width: 60%;
 
   .fa-file-pdf {
     padding-right: 0.5rem;
@@ -76,7 +75,7 @@ const NavItem = styled.div<{ active?: boolean }>`
   }
 
   @media only screen and (min-width: 1200px) {
-    font-size: 1.4rem;
+    font-size: 2vh;
   }
 
   a {

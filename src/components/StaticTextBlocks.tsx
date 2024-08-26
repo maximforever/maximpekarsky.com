@@ -1,19 +1,23 @@
 export const AboutMeText = () => (
   <>
     <p>
-      I&apos;m a product-driven full-stack web developer, writer, and teacher.
-      I am currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
+      I&apos;m a product-driven, senior full-stack web developer, specializing in intuitive data-driven UIs, and  front-end performance and architecture.
+      I feel equally comfortable prototyping a new interface or building on top a legacy application.
+      In addition to my engineering work, I am involved in learning and development, internal tooling, and hiring.
+      I also teach and write.
+    </p>
+    <p>
+      I&apos;m currently freelancing, helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
       In the past, I worked on engineering and product teams at 
       <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>,{" "}
       <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, and the{" "}
       <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office.</a>{" "}
-      I attended the <a href="https://recurse.com" target="blank" rel="nofollow noreferrer">Recurse Center</a> in 2019 and can't recommend it enough.
+      I attended the <a href="https://recurse.com" target="blank" rel="nofollow noreferrer">Recurse Center</a> and can't recommend it enough.
     </p>
     <p>
-      In addition to my engineering work, I am involved in learning and development, internal tooling, and hiring process.
     </p>
     <p>
-      Outside of work, I&apos;m always building the next cool thing. My latest projects are <a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms, and <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">Tiny Logger</a>, a minimal blogging platform.      
+      Outside of work, I&apos;m always building useful tools. My latest projects are <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">TinyLogger</a>, a minimal blogging platform<a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, and <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms.      
     </p>
   </>
 )

@@ -29,27 +29,27 @@ const HeadingWrapper = styled.div<{ open: boolean }>`
 
 const Heading = styled.h1<{ open: boolean }>`
   font-family: ${({ theme }) => theme.fonts.serif};
-  font-size: ${(props) => (props.open ? "2.5rem" : "3rem")};
+  font-size: ${(props) => (props.open ? "4rem" : "4vh")};
   font-weight: 300;
   margin: 0px;
   white-space: nowrap;
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
-    font-size: 3rem;
-    font-size: ${(props) => (props.open ? "3rem" : "5rem")};
+    font-size: 4vh;
+    font-size: ${(props) => (props.open ? "4vh" : "7vh")};
   }
 `;
 
 const Subheading = styled.h2<{ open: boolean }>`
-  font-size: ${(props) => (props.open ? "1rem" : "1.3em")};
+  font-size: 1.2rem;
   font-weight: 300;
   margin: 0;
   white-space: nowrap;
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 768px) {
-    font-size: ${(props) => (props.open ? "1.2rem" : "1.8rem")};
+    font-size: ${(props) => (props.open ? "1.6vh" : "2.5vh")};
   }
 `;
 
