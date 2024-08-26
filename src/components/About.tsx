@@ -14,7 +14,6 @@ const AboutWrapper = styled.div`
 const StyledAboutMeText = styled.div`
   font-weight: 400;
   line-height: 1.9;
-  max-width: 1800px;
 
   @media only screen and (min-width: 768px) {
     padding-top: 0;
@@ -29,7 +28,13 @@ const StyledAboutMeText = styled.div`
 `;
 
 const AboutMeContainer = styled.div`
-  //max-width: 1200px;
+  @media only screen and (min-width: 1200px) {
+    max-width: 800px;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    max-width: 1800px;
+  }
 `;
 
 const About: React.FC<{ open: boolean }> = ({ open }) => {

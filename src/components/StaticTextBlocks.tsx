@@ -20,6 +20,9 @@ export const AboutMeText = () => (
     <p>
       Outside of work, I&apos;m always building useful tools. My latest projects are <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">TinyLogger</a>, a minimal blogging platform<a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, and <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms.      
     </p>
+    <p>
+      I'm available for freelance work. Reach out <a href="mailto:pekarsky.maxim@gmail.com" rel="noreferrer" target="_blank">by email</a> - I'd love to help you build your next product!
+    </p>
   </>
 )
 
