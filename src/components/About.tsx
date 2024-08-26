@@ -25,15 +25,23 @@ const StyledAboutMeText = styled.div`
     font-size: 1.3vw;
     width: 75%;
   }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2vw;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    font-size: 1.1vw;
+  }
 `;
 
 const AboutMeContainer = styled.div`
   @media only screen and (min-width: 1200px) {
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   @media only screen and (min-width: 1600px) {
-    max-width: 1800px;
+    max-width: 1400px;
   }
 `;
 
