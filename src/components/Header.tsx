@@ -29,27 +29,42 @@ const HeadingWrapper = styled.div<{ open: boolean }>`
 
 const Heading = styled.h1<{ open: boolean }>`
   font-family: ${({ theme }) => theme.fonts.serif};
-  font-size: ${(props) => (props.open ? "4rem" : "4vh")};
+  font-size: ${(props) => (props.open ? "2.3rem" : "5vh")};
   font-weight: 300;
   margin: 0px;
   white-space: nowrap;
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
+  @media only screen and (min-width: 400px) {
+    font-size: ${(props) => (props.open ? "3.3rem" : "5vh")};
+  }
+
   @media only screen and (min-width: 768px) {
-    font-size: 4vh;
-    font-size: ${(props) => (props.open ? "4vh" : "7vh")};
+    font-size: ${(props) => (props.open ? "4vw" : "7vh")};
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: ${(props) => (props.open ? "3vw" : "7vh")};
   }
 `;
 
 const Subheading = styled.h2<{ open: boolean }>`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   margin: 0;
   white-space: nowrap;
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
+  @media only screen and (min-width: 400px) {
+    font-size: ${(props) => (props.open ? "1.2rem" : "2.5vh")};
+  }
+
   @media only screen and (min-width: 768px) {
-    font-size: ${(props) => (props.open ? "1.6vh" : "2.5vh")};
+    font-size: ${(props) => (props.open ? "1.6vw" : "2.5vh")};
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: ${(props) => (props.open ? "1.2vw" : "2.5vh")};
   }
 `;
 

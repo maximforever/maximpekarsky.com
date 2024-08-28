@@ -18,18 +18,20 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   transition-duration: ${({ theme }) => theme.transitions.short};
   position: absolute;
 
-  @media only screen and (min-width: 768px) {
-    right: 5%;
-    min-width: 5rem;
-    text-align: center;
-  }
+  right: 5%;
+  min-width: 5rem;
+  text-align: center;
 
   svg {
-    font-size: 3.5vh;
+    font-size: 2.6rem;
     margin-top: 1rem;
 
     @media only screen and (min-width: 768px) {
-      font-size: 3.5vh;
+      font-size: 3.5vw;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 3rem;
     }
   }
 
