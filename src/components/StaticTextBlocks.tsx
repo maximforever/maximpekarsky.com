@@ -1,10 +1,11 @@
 export const AboutMeText = () => (
   <>
     <p>
-      I&apos;m a product-driven senior full-stack web developer, specializing in intuitive data-driven UIs, and front-end performance and architecture.
-      I feel equally comfortable prototyping a new interface or developing new features for a legacy application.
-      I'm involved in team learning and development, internal tooling, and hiring.
-      I also regularly teach and write.
+      I&apos;m a product-driven senior full-stack web developer.
+      I specialize in intuitive data-driven UIs and performant front-end architecture.
+      I feel equally comfortable prototyping a new app or building features on top of a legacy codebase.
+      In addition to my engineering work, I'm involved in team learning and development and hiring.
+      I regularly write about code and teach.
     </p>
     <p>
       I&apos;m currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
@@ -21,7 +22,7 @@ export const AboutMeText = () => (
       Outside of work, I&apos;m always building useful tools. My latest projects are <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">TinyLogger</a>, a minimal blogging platform<a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, and <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms.      
     </p>
     <p>
-      I'm available for freelance work. Reach out <a href="mailto:pekarsky.maxim@gmail.com" rel="noreferrer" target="_blank">by email</a> - I'd love to help you build your next product!
+      I'm available for freelance work. <a href="mailto:pekarsky.maxim@gmail.com" rel="noreferrer" target="_blank">Say hello</a> - I'd love to help you build your next product!
     </p>
   </>
 )
