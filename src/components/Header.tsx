@@ -36,7 +36,7 @@ const Heading = styled.h1<{ open: boolean }>`
   transition: font-size, ${({ theme }) => theme.transitions.long};
 
   @media only screen and (min-width: 400px) {
-    font-size: ${(props) => (props.open ? "3.3rem" : "5vh")};
+    font-size: ${(props) => (props.open ? "2.8rem" : "5vh")};
   }
 
   @media only screen and (min-width: 768px) {

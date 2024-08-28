@@ -19,11 +19,10 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
   position: absolute;
 
   right: 5%;
-  min-width: 5rem;
   text-align: center;
 
   svg {
-    font-size: 2.6rem;
+    font-size: 8vw;
     margin-top: 1rem;
 
     @media only screen and (min-width: 768px) {
@@ -31,7 +30,7 @@ const StyledDarkModeToggle = styled.div<StyledToggleProps>`
     }
 
     @media only screen and (min-width: 1200px) {
-      font-size: 3rem;
+      font-size: 3vw;
     }
   }
 
