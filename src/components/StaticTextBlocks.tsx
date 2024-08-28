@@ -4,8 +4,8 @@ export const AboutMeText = () => (
       I&apos;m a product-driven senior full-stack web developer.
       I specialize in intuitive data-driven UIs and performant front-end architecture.
       I feel equally comfortable prototyping a new app or building features on top of a legacy codebase.
-      In addition to my engineering work, I'm involved in team learning and development and hiring.
-      I regularly write about code and teach.
+      In addition to my engineering work, I'm involved in hiring and team learning and development.
+      I regularly write and teach.
     </p>
     <p>
       I&apos;m currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
