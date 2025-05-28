@@ -21,6 +21,8 @@ import traffic from "../assets/project_images/projects/traffic.gif";
 import trafficStatic from "../assets/project_images/projects/traffic.png";
 import trakr from "../assets/project_images/projects/trakr.gif";
 import trakrStatic from "../assets/project_images/projects/trakr.png";
+import typerfast from "../assets/project_images/projects/typerfast.gif";
+import typerfastStatic from "../assets/project_images/projects/typerfast.png";
 import { useState } from "react";
 import wordsync from "../assets/project_images/projects/wordsync.gif";
 import wordsyncStatic from "../assets/project_images/projects/wordsync.png";
@@ -37,6 +39,7 @@ const gifPaths: { [key: string]: string } = {
   traffic: traffic,
   spacesquares: spaceSquares,
   textclock: textclock,
+  typerfast: typerfast,
   wtfistoday: wtfistoday,
   songquiz: songquiz,
   wordsync: wordsync,
@@ -52,6 +55,7 @@ const imagePaths: { [key: string]: string } = {
   traffic: trafficStatic,
   spacesquares: spaceSquaresStatic,
   textclock: textclockStatic,
+  typerfast: typerfastStatic,
   wtfistoday: wtfistodayStatic,
   songquiz: songquizStatic,
   wordsync: wordsyncStatic,
