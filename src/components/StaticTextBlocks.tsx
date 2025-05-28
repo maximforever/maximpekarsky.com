@@ -5,24 +5,19 @@ export const AboutMeText = () => (
       I specialize in intuitive data-driven UIs and performant front-end architecture.
       I feel equally comfortable prototyping a new app or building features on top of a legacy codebase.
       In addition to my engineering work, I'm involved in hiring and team learning and development.
-      I regularly write and teach.
+      I regularly contribute to the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog,</a> write on my personal <a href="https://tinylogger.com/max" target="_blank" rel="nofollow noreferrer">blog</a>, and teach.
     </p>
     <p>
-      I&apos;m currently helping build <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> (the best place to learn TypeScript on the web) and writing for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
-      In the past, I worked on engineering and product teams at 
-      <a href="https://www.activestewardship.org" target="_blank" rel="nofollow noreferrer"> CAS</a>,{" "}
+      I&apos;m currently building <a href="https://www.typerfast.com" target="_blank" rel="nofollow noreferrer"> Typerfast</a> (an adaptive, AI-powered typing trainer) and doing freelance work with clients like <a href="https://www.executeprogram.com" target="_blank" rel="nofollow noreferrer"> Execute Program</a> and <a href="https://www.activestewardship.org" target="_blank" rel="nofollow noreferrer"> The Center for Active Stewardship</a>.
+      In the past, I worked on engineering and product teams at
       <a href="https://www.bonus.ly" target="_blank" rel="nofollow noreferrer"> Bonus.ly</a>,{" "}
       <a href="https://codecademy.com" target="_blank" rel="nofollow noreferrer">Codecademy</a>, and the{" "}
       <a href="https://www1.nyc.gov/site/opportunity/index.page" target="blank" rel="nofollow noreferrer">NYC Mayor&apos;s Office.</a>{" "}
+      I occasionally write for the <a href="https://stackoverflow.blog/author/maxpekarsky/" target="_blank" rel="nofollow noreferrer"> StackOverflow blog</a>.
       I attended the <a href="https://recurse.com" target="blank" rel="nofollow noreferrer">Recurse Center</a> and can't recommend it enough.
     </p>
     <p>
-    </p>
-    <p>
-      Outside of work, I&apos;m always building useful tools. My latest projects are <a href="https://www.tinylogger.com" target="_blank" rel="nofollow noreferrer">TinyLogger</a>, a minimal blogging platform<a href="https://www.gem.fm" target="_blank" rel="nofollow noreferrer"> GemFM</a>, a podcast episode recommendation app, and <a href="https://www.hackterms.com" target="_blank" rel="nofollow noreferrer"> Hackterms</a>, the Urban Dictionary for programming terms.      
-    </p>
-    <p>
-      I'm available for freelance work. <a href="mailto:pekarsky.maxim@gmail.com" rel="noreferrer" target="_blank">Say hello</a> - I'd love to help you build your next product!
+      <a href="mailto:pekarsky.maxim@gmail.com" rel="noreferrer" target="_blank">Say hello</a> - I'd love to collaborate or help you build your next product!
     </p>
   </>
 )

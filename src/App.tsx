@@ -19,6 +19,7 @@ import ProjectsPage from "./components/ProjectsPage";
 import { ThemeProvider } from "styled-components";
 import WorkPage from "./components/WorkPage";
 import WritingPage from "./components/WritingPage";
+import RCScout from "./components/RCScout";
 
 //import beachBackground from "../assets/beach_background.svg";
 
@@ -86,7 +87,10 @@ function App() {
   return (
     <ThemeProvider theme={getTheme()}>
       <GlobalStylesheet theme={getTheme()} />
-      <main className="App">
+      <main
+        className="App"
+        style={{ minHeight: "100vh", position: "relative" }}
+      >
         <Header
           open={appIsOpen}
           darkMode={darkMode}
@@ -97,6 +101,7 @@ function App() {
           <Nav open={appIsOpen} page={page} handleNavClick={handleNavClick} />
           {router()}
         </MainContent>
+        {appIsOpen && <RCScout />}
       </main>
       <div className="beach-scene"></div>
       <Moon />
