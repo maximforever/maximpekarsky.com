@@ -8,6 +8,7 @@
     "stack": [
       "Node.js/Express",
       "TypeScript",
+      "JavaScript",
       "Tailwind",
       "React.js",
       "MongoDB"
