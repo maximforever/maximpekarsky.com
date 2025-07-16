@@ -43,6 +43,73 @@ const WorkPage = () => {
   return (
     <MediumContainer>
       <WorkExperience>
+        <Title>CoverbaseAI, Macro.com, Carmafia</Title>
+        <Description>
+          <p>
+            As a freelance software developer at various startups, I've embedded
+            in full-stack teams to do critical, full-lifecycle, full-stack
+            feature work. Able to hit the ground running on Day 1 and always
+            focused on delivering the most business value I can, I start by
+            gathering context and grokking cultural norms and architectural
+            patterns so I can ship quickly and confidently.
+          </p>
+          <strong>Accomplishments</strong>
+          <ul>
+            <li>
+              Developed video embedding in markdown docs and free-form canvas
+              components.
+            </li>
+            <li>
+              Rewrote Material UI component library with Radix and Tailwind.
+            </li>
+            <li>
+              Designed and developed a Notion-style table of contents component
+              for markdown docs.
+            </li>
+            <li>
+              Designed, developed, and shipped an AI-powered CMS and intuitive
+              UI for a used car dealership.
+            </li>
+          </ul>
+        </Description>
+      </WorkExperience>
+
+      <WorkExperience>
+        <a
+          href="https://proxydata.org/"
+          target="_blank"
+          rel="nofollow noreferrer"
+        >
+          <Title>Center For Active Stewardship</Title>
+        </a>
+        <Description>
+          <p>
+            <a href="https://activestewardship.org/">CAS</a> brought me on to
+            develop a complete, performant UI to help asset managers analyze,
+            visualize, and make environmentally responsible investment decisions
+            from millions of rows of regulatory and financial data.
+          </p>
+          <strong>Accomplishments</strong>
+          <ul>
+            <li>
+              Designed, developed, and deployed a complete front end for a data
+              portal enabling asset managers to query and visualize millions of
+              rows of financial and regulatory data with <Tech>React</Tech>/
+              <Tech>Next.js</Tech>,<Tech>TypeScript</Tech>,{" "}
+              <Tech>Tailwind</Tech>, and <Tech>Chart.js</Tech>.
+            </li>
+            <li>
+              Engineered a robust UI with dynamic visualizations and custom
+              table controls on top of multiple rapidly evolving data sources;
+              collaborated with data and back-end engineers to finalize API and
+              data shape through caching, virtualization, and intuitive
+              filtering, sorting, and toggling.
+            </li>
+          </ul>
+        </Description>
+      </WorkExperience>
+
+      <WorkExperience>
         <a
           href="https://executeprogram.com"
           target="_blank"
@@ -72,41 +139,6 @@ const WorkPage = () => {
             <li>
               Helped develop website navbar, consistent button component, lesson
               reference sidebar.
-            </li>
-          </ul>
-        </Description>
-      </WorkExperience>
-
-      <WorkExperience>
-        <a
-          href="https://activestewardship.org/"
-          target="_blank"
-          rel="nofollow noreferrer"
-        >
-          <Title>Center For Active Stewardship</Title>
-        </a>
-        <Description>
-          <p>
-            CAS brought me on to develop a complete, performant UI to help asset
-            managers analyze, visualize, and make environmentally responsible
-            investment decisions from millions of rows of regulatory and
-            financial data.
-          </p>
-          <strong>Accomplishments</strong>
-          <ul>
-            <li>
-              Designed, developed, and deployed a complete front end for a data
-              portal enabling asset managers to query and visualize millions of
-              rows of financial and regulatory data with <Tech>React</Tech>/
-              <Tech>Next.js</Tech>,<Tech>TypeScript</Tech>,{" "}
-              <Tech>Tailwind</Tech>, and <Tech>Chart.js</Tech>.
-            </li>
-            <li>
-              Engineered a robust UI with dynamic visualizations and custom
-              table controls on top of multiple rapidly evolving data sources;
-              collaborated with data and back-end engineers to finalize API and
-              data shape through caching, virtualization, and intuitive
-              filtering, sorting, and toggling.
             </li>
           </ul>
         </Description>
